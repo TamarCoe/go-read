@@ -17,18 +17,31 @@ const SelectRecord = () => {
     };
 
     return (
-        <WrapSelectRecord>
+        <WrapSelectRecord dir="rtl">
             <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">בחירת הקלטה</InputLabel>
-                <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
+                {/* <InputLabel id="demo-simple-select-label">בחירת הקלטה</InputLabel> */}
+                <Select dir="rtl"
+                    displayEmpty
+                    renderValue={(selected) => {
+                        if (!selected) {
+                            return <em>בחירת הקלטה</em>;
+                        }
+
+                        return selected.filename;
+                    }}
+                    // labelId="demo-simple-select-label"
+                    // id="demo-simple-select"
                     value={record}
-                    label="בחירת הקלטה"
+                    // label="בחירת הקלטה"
                     onChange={({ target }) => {
                         setRecord(target.value)
                     }}
+                    placeholder="בחירת הקלטה"
+                    inputProps={{ 'aria-label': 'Without label' }}
                 >
+                    <MenuItem disabled value="">
+                        <em>בחירת הקלטה</em>
+                    </MenuItem>
                     {records.map((record) =>
                         <MenuItem value={record}>{record.filename}</MenuItem>
                     )}
