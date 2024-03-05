@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import { Section } from "styles/GlobalCss"
+import { Section, Scroll } from "styles/GlobalCss"
 import { WrapScreen, WrapContent, Left, Right } from 'styles/GlobalStyle'
 
 const Wrap = WrapScreen
@@ -10,6 +10,8 @@ width:100%;
 background:#26445A;
 overflow:auto;
 min-height:350px
+
+${Scroll};
 `
 
 export { Wrap, Left, Right, WrapContent, WrapBrain }

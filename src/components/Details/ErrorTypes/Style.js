@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Hover } from 'styles/GlobalCss'
+import { Hover ,Scroll} from 'styles/GlobalCss'
 
 const WrapErrorTypes = styled.div`
 row-gap:20px;
@@ -23,6 +23,7 @@ height:100%;
 row-gap:15px;
 display:flex;
 flex-direction: column;
+${Scroll};
 `
 
 export { WrapErrorType, WrapErrorTypes, Title, WrapErrors }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Section } from 'styles/GlobalCss'
+import { Section,Scroll } from 'styles/GlobalCss'
 
 const WrapScreen = styled.div`
 width:100%;
@@ -8,11 +8,13 @@ display: flex;
 row-gap: 20px;
 flex-direction: column;
 `
+
 const WrapContent = styled.div`
 display:flex;
 column-gap: 20px;
 overflow: auto;
 height:100%;
+${Scroll};
 `
 
 const Left = styled.div`
@@ -22,6 +24,7 @@ ${Section}
 row-gap: 20px;
 display: flex;
 flex-direction: column;
+${Scroll};
 `
 
 const DarkButton = styled.div`

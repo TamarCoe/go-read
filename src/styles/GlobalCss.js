@@ -7,6 +7,28 @@ const Hover = css`
 }
 `
 
+const Scroll = css`
+scrollbar-width: thin;
+  scrollbar-color:#3366ff5b #3366ff28;
+  :hover{
+    scrollbar-color:#3366ff28 red; 
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #3366ff28;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3366ff5b;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: red;
+  }
+`
+
 const WrapScreen = css`
 width:100%;
 height:100%;
@@ -35,4 +57,4 @@ background:${props => props.selected && '#F3F3F3'};
 opacity:${props => props.disabled && '0.5'};
 `
 
-export { CustomButton, Hover, WrapScreen, Section }
+export { Scroll, CustomButton, Hover, WrapScreen, Section }
