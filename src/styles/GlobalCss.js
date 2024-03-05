@@ -8,25 +8,25 @@ const Hover = css`
 `
 
 const Scroll = css`
-scrollbar-width: thin;
-  scrollbar-color:#3366ff5b #3366ff28;
-  :hover{
-    scrollbar-color:#3366ff28 rgba(51, 102, 255, 0.357) rgba(51, 102, 255, 0.157); 
-  }
-  ::-webkit-scrollbar {
-    width: 1px;
-  }
 
-  ::-webkit-scrollbar-track {
-    background: #3366ff28;
-  }
+&::-webkit-scrollbar {
+  width: 3px;
+  height: 3px !important;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #3366ff5b;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(51, 102, 255, 0.357) rgba(51, 102, 255, 0.157);
-  }
+&::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(51, 102, 255, 0.155731);
+}
+
+&::-webkit-scrollbar-thumb {
+  background: #3366ff5b;
+}
+
+& ::-webkit-scrollbar-thumb:hover {
+  background: #3366ff;
+}
+
+
 `
 
 const WrapScreen = css`
