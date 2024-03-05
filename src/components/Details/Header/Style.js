@@ -16,12 +16,12 @@ const ButtonType = styled.div`
     box-shadow:${props => !props.disabled && '0px 0px 2px rgba(2, 1, 0, 0.1)'};
     cursor:${props => !props.disabled && 'pointer'};
 }
-color: ${props => props.selected ? 'white' : 'white'};
 border-radius: 6px;
-background:${props => props.selected ? '#26445A' : '#A2B5C3'};
+background:${props => props.selected ? '#e72d5d' : 'white'};
 
 opacity:${props => props.disabled && '0.3'};
 color: ${props => props.disabled ? '#26445A' : 'white'};
+color: ${props => props.selected ? 'white' : '#26445A'};
 
 align-items: center;
 display: flex;
