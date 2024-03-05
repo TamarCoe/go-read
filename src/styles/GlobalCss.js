@@ -11,7 +11,7 @@ const Scroll = css`
 scrollbar-width: thin;
   scrollbar-color:#3366ff5b #3366ff28;
   :hover{
-    scrollbar-color:#3366ff28 red; 
+    scrollbar-color:#3366ff28 rgba(51, 102, 255, 0.357) rgba(51, 102, 255, 0.157); 
   }
   ::-webkit-scrollbar {
     width: 3px;
@@ -25,7 +25,7 @@ scrollbar-width: thin;
     background: #3366ff5b;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: red;
+    background: rgba(51, 102, 255, 0.357) rgba(51, 102, 255, 0.157);
   }
 `
 
