@@ -12,6 +12,7 @@ const Main = () => {
             <WrapContent>
                 <Right>
                     <ErrorTypes />
+
                 </Right>
                 <Left>
                     <DetailedView />

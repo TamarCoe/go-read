@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Section,Scroll } from 'styles/GlobalCss'
+import { Section, Scroll } from 'styles/GlobalCss'
 
 const WrapScreen = styled.div`
 width:100%;
@@ -44,6 +44,8 @@ display: flex;
 const Right = styled.div`
 width:${props => props.size ? props.size : '15%'};    
 ${Section};
+${Scroll};
+overflow:auto;
 `
 
 export { DarkButton, WrapScreen, WrapContent, Left, Right }

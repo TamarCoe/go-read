@@ -10,21 +10,26 @@ const Hover = css`
 const Scroll = css`
 
 &::-webkit-scrollbar {
-  width: 3px;
+  
+  width: 6px;
   height: 3px !important;
 }
 
 &::-webkit-scrollbar-track {
+  border-radius: 30px;
   box-shadow: inset 0 0 5px rgba(51, 102, 255, 0.155731);
 }
 
 &::-webkit-scrollbar-thumb {
+  border-radius: 30px;
   background: #3366ff5b;
 }
 
 & ::-webkit-scrollbar-thumb:hover {
   background: #3366ff;
 }
+
+
 
 
 `

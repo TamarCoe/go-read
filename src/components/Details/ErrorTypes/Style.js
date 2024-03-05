@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Hover ,Scroll} from 'styles/GlobalCss'
+import { Hover, Scroll } from 'styles/GlobalCss'
 
 const WrapErrorTypes = styled.div`
 row-gap:20px;
@@ -15,6 +15,7 @@ ${Hover};
 const Title = styled.div`
 color:#26445A;
 text-align:right;
+// padding:10px;
 `
 
 const WrapErrors = styled.div`
@@ -23,6 +24,7 @@ height:100%;
 row-gap:15px;
 display:flex;
 flex-direction: column;
+padding-left:10px;
 ${Scroll};
 `
 
