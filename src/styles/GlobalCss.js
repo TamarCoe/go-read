@@ -14,7 +14,7 @@ scrollbar-width: thin;
     scrollbar-color:#3366ff28 rgba(51, 102, 255, 0.357) rgba(51, 102, 255, 0.157); 
   }
   ::-webkit-scrollbar {
-    width: 3px;
+    width: 1px;
   }
 
   ::-webkit-scrollbar-track {
