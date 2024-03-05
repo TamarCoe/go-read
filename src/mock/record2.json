@@ -1,0 +1,322 @@
+{
+    "filename": "Sample Child Words.mp3",
+    "user_id": "Child1",
+    "duration": 7.941,
+    "assesment_type": "word_group",
+    "lexile_level": 100,
+    "results": {
+        "num_differences": 4,
+        "substitution_count": 2,
+        "insertion_count": 2,
+        "correct_count": 2,
+        "overall_score": 44.4,
+        "deletion_count": 0,
+        "reference_text": "שִׁתֵּף מִבְדַּק תִּקְרָה הֻלְבַּשׁ",
+        "text_score": [
+            {
+                "transcription": "שִׁתֵּף",
+                "transcription_index": 0,
+                "reference_word": "שִׁתֵּף",
+                "reference_index": 0,
+                "t_status": "CORRECT",
+                "confidence": 92.56,
+                "end": 0.848,
+                "start": 0.181,
+                "phoneme_breakdown": [
+                    {
+                        "quality_score": 89,
+                        "end": 0.199,
+                        "start": 0.0,
+                        "phoneme": "שׁ",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 99.7,
+                        "end": 0.290,
+                        "start": 0.199,
+                        "phoneme": " ִ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 98,
+                        "end": 0.442,
+                        "start": 0.290,
+                        "phoneme": "תּ",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 99.7,
+                        "end": 0.639,
+                        "start": 0.442,
+                        "phoneme": " ֵ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 91.9,
+                        "end": 0.789,
+                        "start": 0.639,
+                        "phoneme": "ףִ",
+                        "p_type": "letter"
+                    }
+                ]
+            },
+            {
+                "transcription": "מְמְדְבֶּק",
+                "transcription_index": 1,
+                "reference_word": "מִבְדַּק",
+                "reference_index": 1,
+                "t_status": "SUBSTITUTION",
+                "confidence": 92.3704833984375,
+                "end": 4.768,
+                "start": 3.391,
+                "phoneme_breakdown": [
+                    {
+                        "quality_score": 99.19,
+                        "end": 2.672,
+                        "start": 1.577,
+                        "phoneme": "מ",
+                        "t_status": "INSERTION",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 51.66,
+                        "end": 3.220,
+                        "start": 2.672,
+                        "phoneme": " ְ",
+                        "t_status": "INSERTION",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 91.65348815917969,
+                        "end": 3.759,
+                        "start": 3.391,
+                        "phoneme": "מ",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 95.76628875732422,
+                        "end": 3.799,
+                        "start": 3.750,
+                        "phoneme": " ִ",
+                        "t_status": "SUBSTITUTION",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 97.88199615478516,
+                        "end": 4.095,
+                        "start": 3.799,
+                        "phoneme": "דּ",
+                        "t_status": "SUBSTITUTION",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 95.32052612304688,
+                        "end": 4.114,
+                        "start": 4.095,
+                        "phoneme": " ְ",
+                        "t_status": "SUBSTITUTION",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 98.26608276367188,
+                        "end": 4.292,
+                        "start": 4.114,
+                        "phoneme": "בּ",
+                        "t_status": "SUBSTITUTION",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 66.78457641601562,
+                        "end": 4.428,
+                        "start": 4.288,
+                        "phoneme": " ֶ",
+                        "t_status": "SUBSTITUTION",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 66.78457641601562,
+                        "end": 4.768,
+                        "start": 4.428,
+                        "phoneme": "ק",
+                        "p_type": "letter"
+                    }
+                ],
+                "error_type": {
+                    "HESITATION": {
+                        "partial": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "transcription": "תִרְ תִּקְרָה",
+                "transcription_index": 5,
+                "reference_word": "תִּקְרָה",
+                "reference_index": 3,
+                "t_status": "INCORRECT",
+                "confidence": 92.3704833984375,
+                "end": 6.801,
+                "start": 5.643,
+                "phoneme_breakdown": [
+                    {
+                        "quality_score": 99.19,
+                        "end": 4.815,
+                        "start": 4.684,
+                        "phoneme": "ת",
+                        "t_status": "INSERTION,",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 51.66,
+                        "end": 4.886,
+                        "start": 4.815,
+                        "phoneme": " ִ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 51.66,
+                        "end": 4.995,
+                        "start": 4.886,
+                        "phoneme": "ר",
+                        "t_status": "INSERTION",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 51.66,
+                        "end": 5.163,
+                        "start": 4.995,
+                        "phoneme": " ְ",
+                        "t_status": "INSERTION",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 91.65348815917969,
+                        "end": 5.718,
+                        "start": 5.643,
+                        "phoneme": "תּ",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 95.76628875732422,
+                        "end": 5.802,
+                        "start": 5.718,
+                        "phoneme": " ִ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 97.88199615478516,
+                        "end": 6.107,
+                        "start": 5.836,
+                        "phoneme": "ק",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 95.32052612304688,
+                        "end": 6.157,
+                        "start": 6.107,
+                        "phoneme": " ְ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 98.26608276367188,
+                        "end": 6.281,
+                        "start": 6.157,
+                        "phoneme": "ר",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 66.78457641601562,
+                        "end": 6.699,
+                        "start": 6.278,
+                        "phoneme": " ָ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 66.78457641601562,
+                        "end": 6.801,
+                        "start": 6.699,
+                        "phoneme": "ה",
+                        "p_type": "letter"
+                    }
+                ],
+                "error_type": {
+                    "SELF-CORRECTION": {
+                        "c_status": "correct",
+                        "partial": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "transcription": "הֶלְבַּשׁ",
+                "transcription_index": 6,
+                "reference_word": "הֻלְבַּשׁ",
+                "reference_index": 4,
+                "t_status": "INCORRECT",
+                "confidence": 92.3704833984375,
+                "end": 7.941,
+                "start": 6.801,
+                "phoneme_breakdown": [
+                    {
+                        "quality_score": 91.65348815917969,
+                        "end": 6.848,
+                        "start": 6.801,
+                        "phoneme": "ה",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 95.76628875732422,
+                        "end": 6.859,
+                        "start": 6.848,
+                        "phoneme": " ֶ",
+                        "t_status": "SUBSTITUTION",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 97.88199615478516,
+                        "end": 6.886,
+                        "start": 6.859,
+                        "phoneme": "ל",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 95.32052612304688,
+                        "end": 7.144,
+                        "start": 6.886,
+                        "phoneme": " ְ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 98.26608276367188,
+                        "end": 7.536,
+                        "start": 7.144,
+                        "phoneme": "בּ",
+                        "p_type": "letter"
+                    },
+                    {
+                        "quality_score": 66.78457641601562,
+                        "end": 7.739,
+                        "start": 7.586,
+                        "phoneme": " ַ",
+                        "p_type": "vowel"
+                    },
+                    {
+                        "quality_score": 66.78457641601562,
+                        "end": 7.941,
+                        "start": 7.739,
+                        "phoneme": "שׁ",
+                        "p_type": "letter"
+                    }
+                ]
+            }
+        ],
+        "transcription": "שִׁתֵּף מְ מְדְבֶּק תִּרְ תִּקְרָה הֶלְבַּשׁ",
+        "word_count": 4,
+        "repetition_count": 2
+    },
+    "language_code": "he-IL",
+    "result_id": "Child1-282_1638878664258",
+    "time": "2023-07-07T10:04:24"
+}

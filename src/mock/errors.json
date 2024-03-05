@@ -1,0 +1,31 @@
+[
+    {
+        "label": "מספר שינויים",
+        "key": "num_differences",
+        "color": "#00C2FF"
+    },
+    {
+        "label": "מספר ההחלפות",
+        "key": "substitution_count",
+        "color": "#FF8A00"
+    },
+    {
+        "label": "מספר ההוספות",
+        "key": "insertion_count",
+        "color": "#00DE16"
+    },
+    {
+        "label": "מילים נכונות",
+        "key": "correct_count",
+        "color": "#D100F3"
+    },
+    {
+        "key": "deletion_count",
+        "label": "מספר ההשמטות",
+        "color": "#FF5858"
+    },
+    {
+        "label": "ציון כולל",
+        "key": "overall_score"
+    }
+]

@@ -1,0 +1,1660 @@
+{
+    "filename": "Mirabel 80 Words.mp3",
+    "user_id": "Mirabel",
+    "duration": 94.404,
+    "assesment_type": "word_group",
+    "lexile_level": 100,
+    "results": {
+        "num_differences": 23,
+        "substitution_count": 18,
+        "insertion_count": 1,
+        "correct_count": 61,
+        "overall_score": 83,
+        "deletion_count": 0,
+        "reference_text": "אִם עַל פִּיל בֵּן לוֹ בּוֹ כִּי תָּא פֶּה מָה שַׁרְתְּ שֵׁן רַק רִיב אֵיךְ חוּט חוֹל טַנְק כְּלִי מַיִם רוּחַ הוּא דַּי לַיְלָה נְיָר בְּכוֹר שַׂמְתְּ גְּבוּל צְנוֹן צְלִיל מֹחַ פָּרַס דַּף חוּץ שַׁי חַיְגַן אֹרֶן צִיר בִּצָּה יָדַיִם בָּאתִי עִוֵּר נַמֵּק שִׁתֵּף מִבְדַּק תִּקְרָה הֻלְבַּשׁ עִנְיַן סְפָרָיו מִצְפֵּה צֹאנִי קֶשֶׁר עַל יַד  נָשׂוּי יְמָמָה חַיְזַר בֵּיצָה גָּלוּי גְּשָׁרִים עַל פִּי  רַמַּאי גְּבָעוֹת מַלְכוּת פִּרְסוּם טִפְטֵף קוֹלְפָן תַּצְפִּית מַפְרִיעִים פִּתּוּחַ מִדְרוֹן יִלְבְּשׁוּ מַטְעֵן גַּלְגַּל הִשְׁוָה קוֹרֵעַ שׁוֹבָב קִשּׁוּטִים מְיֻחָד פִּקְפְּקוּ מְסֻבָּךְ",
+        "text_score": [
+            {
+                "transcription_index": 1,
+                "transcription": "אִם",
+                "reference_index": 1,
+                "reference_word": "אִם",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 2,
+                "transcription": "עַל",
+                "reference_index": 2,
+                "reference_word": "עַל",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 3,
+                "transcription": "פִּיל",
+                "reference_index": 3,
+                "reference_word": "פִּיל",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 4,
+                "transcription": "בֵּן",
+                "reference_index": 4,
+                "reference_word": "בֵּן",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 5,
+                "transcription": "לוֹ",
+                "reference_index": 5,
+                "reference_word": "לוֹ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 6,
+                "transcription": "בּוֹ",
+                "reference_index": 6,
+                "reference_word": "בּוֹ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 7,
+                "transcription": "כִּי",
+                "reference_index": 7,
+                "reference_word": "כִּי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 8,
+                "transcription": "תֶּא",
+                "reference_index": 8,
+                "reference_word": "תָּא",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "תּ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֶ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "א",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 9,
+                "transcription": "פֶּה",
+                "reference_index": 9,
+                "reference_word": "פֶּה",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 10,
+                "transcription": "מָה",
+                "reference_index": 10,
+                "reference_word": "מָה",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 11,
+                "transcription": "שַׁרַתּ",
+                "reference_index": 11,
+                "reference_word": "שַׁרְתְּ",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "שׁ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "תּ",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 12,
+                "transcription": "שֵׁן",
+                "reference_index": 12,
+                "reference_word": "שֵׁן",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 13,
+                "transcription": "רַק",
+                "reference_index": 13,
+                "reference_word": "רַק",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 14,
+                "transcription": "רִיב",
+                "reference_index": 14,
+                "reference_word": "רִיב",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 15,
+                "transcription": "אֵיךְ",
+                "reference_index": 15,
+                "reference_word": "אֵיךְ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 16,
+                "transcription": "חוּט",
+                "reference_index": 16,
+                "reference_word": "חוּט",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 17,
+                "transcription": "חוֹל",
+                "reference_index": 17,
+                "reference_word": "חוֹל",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 18,
+                "transcription": "טַנַק",
+                "reference_index": 18,
+                "reference_word": "טַנְק",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ט",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "נ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ק",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 19,
+                "transcription": "כְּלִי",
+                "reference_index": 19,
+                "reference_word": "כְּלִי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 20,
+                "transcription": "מַיִם",
+                "reference_index": 20,
+                "reference_word": "מַיִם",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 21,
+                "transcription": "רוּחַ",
+                "reference_index": 21,
+                "reference_word": "רוּחַ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 22,
+                "transcription": "הוּא",
+                "reference_index": 22,
+                "reference_word": "הוּא",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 23,
+                "transcription": "דַּי",
+                "reference_index": 23,
+                "reference_word": "דַּי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 24,
+                "transcription": "לַיְלָה",
+                "reference_index": 24,
+                "reference_word": "לַיְלָה",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 25,
+                "transcription": "נְיָר",
+                "reference_index": 25,
+                "reference_word": "נְיָר",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 26,
+                "transcription": "בְּכוֹר",
+                "reference_index": 26,
+                "reference_word": "בְּכוֹר",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 27,
+                "transcription": "שׁ שַׂמְתְּ",
+                "reference_index": 27,
+                "reference_word": "שַׂמְתְּ",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "שׁ",
+                                "p_type": "letter",
+                                "t_status": "INSERTION"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "INSERTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "שׂ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "מ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "תּ",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ],
+                "error_type": {
+                    "SELF-CORRECTION": {
+                        "c_status": "correct",
+                        "partial": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "transcription_index": 28,
+                "transcription": "גְּבוּל",
+                "reference_index": 28,
+                "reference_word": "גְּבוּל",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 29,
+                "transcription": "צְנוֹן",
+                "reference_index": 29,
+                "reference_word": "צְנוֹן",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 30,
+                "transcription": "צְלִיל",
+                "reference_index": 30,
+                "reference_word": "צְלִיל",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 31,
+                "transcription": "מֹחַ",
+                "reference_index": 31,
+                "reference_word": "מֹחַ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 32,
+                "transcription": "פְּרַס",
+                "reference_index": 32,
+                "reference_word": "פָּרַס",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "פּ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ס",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 33,
+                "transcription": "דַּף",
+                "reference_index": 33,
+                "reference_word": "דַּף",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 34,
+                "transcription": "חוּץ",
+                "reference_index": 34,
+                "reference_word": "חוּץ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 35,
+                "transcription": "שַׁי",
+                "reference_index": 35,
+                "reference_word": "שַׁי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 36,
+                "transcription": "חַיַ חַיְגַן",
+                "reference_index": 36,
+                "reference_word": "חַיְגַן",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ח",
+                                "p_type": "letter",
+                                "t_status": "INSERTION"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "INSERTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "י",
+                                "p_type": "letter",
+                                "t_status": "INSERTION"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "INSERTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ח",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "י",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ג",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ן",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ],
+                "error_type": {
+                    "SELF-CORRECTION": {
+                        "c_status": "correct",
+                        "partial": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "transcription_index": 37,
+                "transcription": "אֹרֶך",
+                "reference_index": 37,
+                "reference_word": "אֹרֶן",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "א",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֹ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֶ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ך",
+                        "p_type": "letter",
+                        "t_status": "SUBSTITUTION"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 38,
+                "transcription": "צִיר",
+                "reference_index": 38,
+                "reference_word": "צִיר",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 39,
+                "transcription": "בֵּיצָּה",
+                "reference_index": 39,
+                "reference_word": "בִּצָּה",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "בּ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֵ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "י",
+                        "p_type": "letter",
+                        "t_status": "INSERTION"
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "צ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ָ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ה",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 40,
+                "transcription": "יָדַיִם",
+                "reference_index": 40,
+                "reference_word": "יָדַיִם",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 41,
+                "transcription": "בָּאתִי",
+                "reference_index": 41,
+                "reference_word": "בָּאתִי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 42,
+                "transcription": "עִוֵּר",
+                "reference_index": 42,
+                "reference_word": "עִוֵּר",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 43,
+                "transcription": "נַמֵּק",
+                "reference_index": 43,
+                "reference_word": "נַמֵּק",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 44,
+                "transcription": "שִׁתֵּף",
+                "reference_index": 44,
+                "reference_word": "שִׁתֵּף",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 45,
+                "transcription": "מִמִדְבֵק",
+                "reference_index": 45,
+                "reference_word": "מִבְדַּק",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "מ",
+                                "t_status": "INSERTION",
+                                "p_type": "letter"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "t_status": "INSERTION",
+                                "p_type": "vowel"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "מ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ִ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "דּ",
+                                "t_status": "SUBSTITUTION",
+                                "p_type": "letter"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "t_status": "CORRECT",
+                                "p_type": "vowel"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "בּ",
+                                "t_status": "SUBSTITUTION",
+                                "p_type": "letter"
+                            },
+                            {
+                                "phoneme": " ֶ",
+                                "t_status": "SUBSTITUTION",
+                                "p_type": "vowel"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ק",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ],
+                "error_type": {
+                    "HESITATION": {
+                        "partial": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "transcription_index": 46,
+                "transcription": "תִּרְתִּקְרָה",
+                "reference_index": 46,
+                "reference_word": "תִּקְרָה",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ת",
+                                "t_status": "INSERTION",
+                                "p_type": "letter"
+                            },
+                            {
+                                "phoneme": " ִ",
+                                "t_status": "INSERTION",
+                                "p_type": "vowel"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "t_status": "INSERTION",
+                                "p_type": "letter"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "t_status": "INSERTION",
+                                "p_type": "vowel"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "תּ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ִ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ק",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ָ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ה",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ],
+                "error_type": {
+                    "SELF-CORRECTION": {
+                        "c_status": "correct",
+                        "partial": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "transcription_index": 47,
+                "transcription": "הֶלְבַּשׁ",
+                "reference_index": 47,
+                "reference_word": "הֻלְבַּשׁ",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "t_status": "CORRECT",
+                                "phoneme": "ה",
+                                "p_type": "letter"
+                            },
+                            {
+                                "phoneme": " ֶ",
+                                "t_status": "SUBSTITUTION",
+                                "p_type": "vowel"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ל",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "בּ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "שׁ",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 48,
+                "transcription": "עִנְיַן",
+                "reference_index": 48,
+                "reference_word": "עִנְיַן",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 49,
+                "transcription": "סְפָרָים",
+                "reference_index": 49,
+                "reference_word": "סְפָרָיו",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ס",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "פ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ָ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ִ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "י",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    },
+                    {
+                        "phoneme": "ם",
+                        "p_type": "letter",
+                        "t_status": "SUBSTITUTION"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 50,
+                "transcription": "מִצְפֵּה",
+                "reference_index": 50,
+                "reference_word": "מִצְפֵּה",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 51,
+                "transcription": "צֹאַנִי",
+                "reference_index": 51,
+                "reference_word": "צֹאנִי",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "צ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֹ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "א",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "INSERTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "נ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ִ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "י",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 52,
+                "transcription": "קֶשֶׁר",
+                "reference_index": 52,
+                "reference_word": "קֶשֶׁר",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 53,
+                "transcription": "עַל יַד",
+                "reference_index": 53,
+                "reference_word": "עַל יַד",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 54,
+                "transcription": "נָשׂוּי",
+                "reference_index": 54,
+                "reference_word": "נָשׂוּי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 55,
+                "transcription": "יְמָמָה",
+                "reference_index": 55,
+                "reference_word": "יְמֶמָה",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "י",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "מ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֶ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "מ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ָ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ה",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 56,
+                "transcription": "חַיְזַר",
+                "reference_index": 56,
+                "reference_word": "חַיְזַר",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 57,
+                "transcription": "בֵּיצָה",
+                "reference_index": 57,
+                "reference_word": "בֵּיצָה",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 58,
+                "transcription": "גָּלוּי",
+                "reference_index": 58,
+                "reference_word": "גָּלוּי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 59,
+                "transcription": "גְּשָׁרִים",
+                "reference_index": 59,
+                "reference_word": "גְּשָׁרִים",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 60,
+                "transcription": "עַל פִּי",
+                "reference_index": 60,
+                "reference_word": "עַל פִּי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 61,
+                "transcription": "רַמַּאי",
+                "reference_index": 61,
+                "reference_word": "רַמַּאי",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 62,
+                "transcription": "גַּבְעוֹת",
+                "reference_index": 62,
+                "reference_word": "גְּבָעוֹת",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ג",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ב",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ע",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ו",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֹ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ת",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 63,
+                "transcription": "מַלְכוּת",
+                "reference_index": 63,
+                "reference_word": "מַלְכוּת",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 64,
+                "transcription": "פַּרְסוּס",
+                "reference_index": 64,
+                "reference_word": "פִּרְסוּם",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "פּ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ס",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ו",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ּ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ס",
+                        "p_type": "letter",
+                        "t_status": "SUBSTITUTION"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 65,
+                "transcription": "טִפְטֵף",
+                "reference_index": 65,
+                "reference_word": "טִפְטֵף",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 66,
+                "transcription": "קוֹלְפָן",
+                "reference_index": 66,
+                "reference_word": "קוֹלְפָן",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 67,
+                "transcription": "תַּצְפִּית",
+                "reference_index": 67,
+                "reference_word": "תַּצְפִּית",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 68,
+                "transcription": "מַרְפִִים",
+                "reference_index": 68,
+                "reference_word": "מַפְרִיעִים",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "מ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "SUBSTITUTION"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "פ",
+                                "p_type": "letter",
+                                "t_status": "SUBSTITUTION"
+                            },
+                            {
+                                "phoneme": " ִ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "t_status": "OMISSION"
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "י",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ם",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 69,
+                "transcription": "פִּתּוּחַ",
+                "reference_index": 69,
+                "reference_word": "פִּתּוּחַ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 70,
+                "transcription": "מֵדַרוֹן",
+                "reference_index": 70,
+                "reference_word": "מִדְרוֹן",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "מ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ד",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ר",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ו",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֹ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ן",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 71,
+                "transcription": "יִלְבַּשׁוּ",
+                "reference_index": 71,
+                "reference_word": "יִלְבְּשׁוּ",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "י",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ִ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ל",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "בּ",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ש",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ו",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ּ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "transcription_index": 72,
+                "transcription": "מַטְעֵן",
+                "reference_index": 72,
+                "reference_word": "מַטְעֵן",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 73,
+                "transcription": "גַּלְגַּל",
+                "reference_index": 73,
+                "reference_word": "גַּלְגַּל",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 74,
+                "transcription": "הַשְׁוָה",
+                "reference_index": 74,
+                "reference_word": "הִשְׁוָה",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ה",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ַ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ש",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ְ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ו",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ָ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ה",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 75,
+                "transcription": "קוֹרֵע",
+                "reference_index": 75,
+                "reference_word": "קוֹרֵעַ",
+                "t_status": "INCORRECT",
+                "phoneme_breakdown": [
+                    {
+                        "phoneme": "ק",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ו",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֹ",
+                                "p_type": "vowel",
+                                "t_status": "CORRECT"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme_duo": [
+                            {
+                                "phoneme": "ר",
+                                "p_type": "letter",
+                                "t_status": "CORRECT"
+                            },
+                            {
+                                "phoneme": " ֵ",
+                                "p_type": "vowel",
+                                "t_status": "SUBSTITUTION"
+                            }
+                        ]
+                    },
+                    {
+                        "phoneme": "ע",
+                        "p_type": "letter",
+                        "t_status": "CORRECT"
+                    },
+                    {
+                        "t_status": "OMISSION"
+                    }
+                ]
+            },
+            {
+                "transcription_index": 76,
+                "transcription": "שׁוֹבָב",
+                "reference_index": 76,
+                "reference_word": "שׁוֹבָב",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 77,
+                "transcription": "קִשּׁוּטִים",
+                "reference_index": 77,
+                "reference_word": "קִשּׁוּטִים",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 78,
+                "transcription": "מְיֻחָד",
+                "reference_index": 78,
+                "reference_word": "מְיֻחָד",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 79,
+                "transcription": "פִּקְפְּקוּ",
+                "reference_index": 79,
+                "reference_word": "פִּקְפְּקוּ",
+                "t_status": "CORRECT"
+            },
+            {
+                "transcription_index": 80,
+                "transcription": "מְסֻבָּךְ",
+                "reference_index": 80,
+                "reference_word": "מְסֻבָּךְ",
+                "t_status": "CORRECT"
+            }
+        ]
+    }
+}
