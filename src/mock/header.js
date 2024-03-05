@@ -6,14 +6,14 @@ const header = [
     },
     {
         id: 1,
-        label: "פירוט",
-        route: "/details"
+        label: "מבט על",
+        route: "/brain"
     },
     {
         id: 2,
-        label: "מבט על",
-        route: "/brain"
-    }
+        label: "פירוט",
+        route: "/details"
+    },
 ]
 
 export default header
