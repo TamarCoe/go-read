@@ -24,7 +24,7 @@ const Main = () => {
                         <ErrorsDetails />
                         <LinkDetails action={() => {
                             navigate('/details')
-                            setIndexMenuItem(1)
+                            setIndexMenuItem(2)
                         }} />
                     </WrapErrors>
                     {/* <PlayRecord /> */}

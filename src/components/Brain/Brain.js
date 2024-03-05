@@ -1,156 +1,138 @@
-import React, { Component, useState, useRef, useEffect } from "react";
-import { render } from "react-dom";
-import { Stage, Text, Arrow, Layer, Image, Shape, Group, Rect } from "react-konva";
-import useImage from "use-image";
-import Brain from "assets/Brain.png";
+import React, { useContext } from 'react'
+import Brain from 'assets/Brain.png'
+import { Context } from 'components/Main/Context'
+import { WrapImg, WrapBrain, Round, SubRound } from './Style'
 
-const points = [10, 200, 100, 200];
+const ShowBrain = () => {
+    const { record } = useContext(Context)
 
-const useCanvas = () => {
-    const [image] = useImage(
-        'https://i.ibb.co/NrZ5hXc/Brain.png'
-        // Brain
-        // "https://upload.wikimedia.org/wikipedia/commons/5/55/John_William_Waterhouse_A_Mermaid.jpg"
-    );
-    const [canvas, setCanvas] = React.useState(null);
+    const getError = () => {
+        let
+            countErrorLetter = 0,
+            countLetter = 0,
+            countErrorVowel = 0,
+            countVowel = 0,
+            errors = {}
 
-    React.useEffect(() => {
-        // do this only when image is loaded
-        if (!image) {
-            return;
-        }
-        var blurredRect = {
-            x: 250,
-            y: 250,
-            height: 400,
-            width: 400,
-            spread: 100
-        };
-        const canvas = document.createElement("canvas");
-        var ctx = canvas.getContext("2d");
+        record.results.text_score.forEach(word => {
+            word?.phoneme_breakdown?.forEach((phoneme) => {
+                const { t_status, p_type } = phoneme
 
+                if (p_type === 'letter')
+                    countLetter++
+                else if (p_type === 'vowel')
+                    countVowel++
 
-        canvas.width = image.width;
-        canvas.height = image.height;
-        // first pass draw everything
-        ctx.drawImage(image, 1, 1, 500, 500, 1, 1, 500, 500);
-        // next drawings will be blurred
-        // ctx.filter = "blur(" + blurredRect.spread + "px)";
-        // draw the canvas over itself, cropping to our required rect
-        // ctx.drawImage(
-        //     canvas,
-        //     blurredRect.x,
-        //     blurredRect.y,
-        //     blurredRect.width,
-        //     blurredRect.height,
-        //     blurredRect.x,
-        //     blurredRect.y,
-        //     blurredRect.width,
-        //     blurredRect.height
-        // );
-        // draw the coloring (white-ish) layer, without blur
-        // ctx.filter = "none"; // remove filter
-        // ctx.fillStyle = "rgba(255,255,255,0.2)";
-        // ctx.setLineDash([]);
-        ctx.strokeStyle = "red";
-        // ctx.beginPath();
-        // ctx.roundRect(100, 30, 10, 10, 100);
-        // ctx.roundRect(50, 70, 10, 10, 100);
-        // ctx.roundRect(40, 110, 10, 10, 100);
-        // ctx.roundRect(40, 150, 10, 10, 100);
-
-        // ctx.roundRect(150, 40, 10, 10, 100);
-        ctx.stroke();
-        // ctx.fillRect(
-        //   blurredRect.x,
-        //   blurredRect.y,
-        //   blurredRect.width,
-        //   blurredRect.height
-        // );
-
-        setCanvas(canvas);
-    }, [image]);
-
-    return canvas;
-};
-
-
-const App = () => {
-    const canvas = useCanvas();
-    const divRef = useRef(null)
-    const [dimensions, setDimensions] = useState({
-        width: 0,
-        height: 0
-    })
-
-    useEffect(() => {
-        debugger
-        if (divRef.current?.offsetHeight && divRef.current?.offsetWidth) {
-            setDimensions({
-                width: divRef.current.offsetWidth,
-                height: divRef.current.offsetHeight
+                if (t_status != 'CORRECT' && t_status) {
+                    if (p_type === 'letter')
+                        countErrorLetter++
+                    else if (p_type === 'vowel')
+                        countErrorVowel++
+                }
             })
+        });
+
+        if (countVowel * 0.97 < countErrorVowel)
+            errors.vowel = true
+        if (countLetter * 0.94 < countErrorLetter)
+            errors.letter = true
+
+        return errors
+    }
+
+    const items = [
+        {
+            id: 0,
+            color: "#8db9c9",
+            left: 7,
+            top: -120,
+            titles: [{ label: "אוצר מילים" ,label:"ה. הנשמע"}]
+        },
+        {
+            id: 1,
+            color: "#eac2bd",
+            left: 30,
+            top: -10,
+            titles: [
+                {
+                    label: "אותיות",
+                    error: getError().letter
+                },
+                {
+                    label: "תנועות",
+                    error: getError().vowel
+                }]
+        },
+        {
+            id: 2,
+            color: "#ead19c",
+            left: 240,
+            top: 110,
+            titles: [{ label: "דיוק" }, { label: "קצב" }]
+        },
+        {
+            id: 3,
+            color: "#ca8342",
+            left: 726,
+            top: -120,
+            titles: [{ label: "פרוזודיה" }, { label: "ה. הנקרא" }]
+        },
+        {
+            id: 4,
+            color: "#a07998",
+            left: 950,
+            top: -9,
+            titles: [{ label: "פרוזודיה" }, { label: "ה. הנקרא" }]
+        },
+        {
+            id: 5,
+            color: "#97b16c",
+            left: 966,
+            top: 100
         }
-    }, [])
+    ]
+
+    const subRounds = [
+        {
+            id: 0,
+            label: "אוצר מילים",
+            top: 9,
+            right: 19
+        },
+        {
+            id: 0,
+            label: "dsdfsad",
+            top: -18,
+            right: 65
+        },
+        {
+            id: 0,
+            label: "dsdfsad",
+            top: -45,
+            right: 20
+        },
+
+    ]
+
 
 
     return (
-        <div ref={divRef} style={{ width: '100%', height: '100%' }}>
-            <Stage x={1} y={1} width={dimensions.width} height={dimensions.height}>
-                <Layer offsetX={dimensions.width/2} x={1} y={1} width={50} height={50}>
-                    <Image image={canvas} />
-                </Layer>
-                <Layer x={1} y={1} width={50} height={50}>
-                    <Arrow points={[1, 40, 40, 65]} fill="black" stroke="black" />
-                </Layer>
+        <WrapBrain>
+            <WrapImg>
+                <img className='brain' src={Brain} />
+            </WrapImg>
 
-                {/* <Arrow points={[1, 40, 40, 65]} fill="black" stroke="black" />
+            {items.map((item, index) =>
+                <Round {...item}>
+                    {subRounds.map((subRound, index) =>
+                        <SubRound {...subRound} {...item?.titles?.[index]}>
+                            {item?.titles?.[index]?.label}
+                        </SubRound>
+                    )}
+                </Round>)}
 
-                <Arrow points={[10, 200, 100, 200]} fill="black" stroke="black" />
-                <Arrow points={[10, 200, 100, 200]} fill="black" stroke="black" />
-                <Arrow points={[10, 200, 100, 200]} fill="black" stroke="black" />
-                <Arrow points={[10, 200, 100, 200]} fill="black" stroke="black" /> */}
+        </WrapBrain>
+    )
+}
 
-                {/* <Layer>
-                <Group
-                    // rotation={shapeProps.rotation}
-                    listening={false}
-                    x={1}
-                    y={1}
-                    offset={{
-                        x: 10 / 2,
-                        y: 20 / 2
-                    }}
-                >
-                    <Rect
-                        // ref={"nameRefShape"}
-                        height={80}
-                        width={80} //this does not change as state change
-                        cornerRadius={100}
-                        fill="#000"
-                        x={1}
-                        y={2}
-                    />
-                    <Text
-                        // ref={nameRef}
-                        x={10 / 2 - 30 / 2}
-                        y={20}
-                        text={"shapeProps.name"}
-                        ellipsis={true}
-                        //height={20}
-                        align="center"
-                        verticalAlign="middle"
-                        fontSize={13}
-                        fontFamily="Calibri"
-                        fill="#fff"
-                        background="#000"
-                        zIndex={3}
-                    />
-                </Group>
-            </Layer> */}
-            </Stage>
-        </div>
-    );
-};
-
-export default App
+export default ShowBrain

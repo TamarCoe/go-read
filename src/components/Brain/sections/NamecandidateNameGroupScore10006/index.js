@@ -1,1 +1,0 @@
-export { NamecandidateNameGroupScore10006 } from "./NamecandidateNameGroupScore10006";

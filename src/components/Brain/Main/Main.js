@@ -1,6 +1,6 @@
 import React from 'react'
 import { WrapBrain, WrapContent } from './Style'
-import Brain from '../Brain2'
+import Brain from '../Brain'
 
 const Main = () => {
 
