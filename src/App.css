@@ -1,11 +1,14 @@
 body {
-  height: calc(100% - 60px);
-  width: calc(100% - 60px);
+  height: 100%;
+  width: 100%;
   background-color: #F3F6F9;
-  padding: 30px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin:0;
+  overflow: hidden;
 }
 
-.App{
+.App {
   height: 100%;
 }
 

@@ -2,11 +2,12 @@ import React, { useContext, useEffect } from 'react'
 import records from 'mock/records'
 import { Context } from 'components/Main/Context'
 import { FormControl, InputLabel, Select, MenuItem, Button } from '@mui/material'
-import { CloudUpload } from '@mui/icons-material'
-import { VisuallyHiddenInput, WrapSelectRecord, UploadButton } from './Style'
+import { StartButton, WrapSelectRecord, UploadButton } from './Style'
+import Upload from 'components/Diagnosis/UploadRecord/UploadButton'
+import UploadRecord from 'components/Diagnosis/UploadRecord'
 
 const SelectRecord = () => {
-    const { record, setRecord } = useContext(Context)
+    const { record, setRecord, localRecord, setLocalRecord } = useContext(Context)
 
     const handleChange = e => {
         const fileReader = new FileReader();
@@ -16,48 +17,52 @@ const SelectRecord = () => {
         };
     };
 
+    const changeFlag = (flag) => {
+        setLocalRecord(flag)
+        setRecord(0)
+    }
+
     return (
         <WrapSelectRecord dir="rtl">
-            <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">בחירת הקלטה</InputLabel> */}
-                <Select dir="rtl"
-                    displayEmpty
-                    renderValue={(selected) => {
-                        if (!selected) {
-                            return <em>בחירת הקלטה</em>;
-                        }
+            <Button onClick={() => changeFlag(false)}>בחירת הקלטה </Button>
+            {localRecord === false &&
+                <FormControl fullWidth>
+                    <Select dir="rtl"
+                        displayEmpty
+                        renderValue={(selected) => {
+                            if (!selected) {
+                                return <em>בחירת הקלטה</em>;
+                            }
 
-                        return selected.filename;
-                    }}
-                    // labelId="demo-simple-select-label"
-                    // id="demo-simple-select"
-                    value={record}
-                    // label="בחירת הקלטה"
-                    onChange={({ target }) => {
-                        setRecord(target.value)
-                    }}
-                    placeholder="בחירת הקלטה"
-                    inputProps={{ 'aria-label': 'Without label' }}
-                >
-                    <MenuItem disabled value="">
-                        <em>בחירת הקלטה</em>
-                    </MenuItem>
-                    {records.map((record) =>
-                        <MenuItem value={record}>{record.filename}</MenuItem>
-                    )}
-                </Select>
+                            return selected?.filename;
+                        }}
+                        value={record}
+                        onChange={({ target }) => {
+                            setRecord(target.value)
+                        }}
+                        placeholder="בחירת הקלטה"
+                        inputProps={{ 'aria-label': 'Without label' }}
+                    >
+                        <MenuItem disabled value="">
+                            <em>בחירת הקלטה</em>
+                        </MenuItem>
+                        {records.map((record) =>
+                            <MenuItem value={record}>{record.filename}</MenuItem>
+                        )}
+                    </Select>
 
-            </FormControl>
-            <UploadButton
-                component="label"
-                role={undefined}
-                variant="contained"
-                tabIndex={-1}
-            >
-                <CloudUpload />
-                העלאת הקלטה
-                <VisuallyHiddenInput type="file" onChange={handleChange} />
-            </UploadButton>
+                </FormControl>}
+            <Button onClick={() => changeFlag(true)}>העלאת הקלטה </Button>
+            {
+                localRecord &&
+                <>
+                    <Upload handleChange={handleChange} title={"העלאת קובף פיענוח"} />
+                    <UploadRecord />
+                </>
+            }
+            <StartButton disabled={!(record.filename && record.recording_url_file)}>
+                פיענוח
+            </StartButton>
         </WrapSelectRecord>
     )
 }

@@ -14,7 +14,7 @@ const ShowBrain = () => {
             countVowel = 0,
             errors = {}
 
-        record.results.text_score.forEach(word => {
+        record?.results?.text_score?.forEach(word => {
             word?.phoneme_breakdown?.forEach((phoneme) => {
                 const { t_status, p_type } = phoneme
 

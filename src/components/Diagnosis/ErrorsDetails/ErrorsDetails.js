@@ -1,24 +1,34 @@
 import React, { useContext } from 'react'
 import errors from 'mock/errors.json'
 import { Context } from 'components/Main/Context'
-import { WrapErrors, Error } from './Style'
+import { WrapErrors, Error, WrapTitle } from './Style'
 
-const ErrorsDetails = () => {
+const ErrorsDetails = (props) => {
     const { record = {} } = useContext(Context),
         { results = {} } = record
+    const { items, title } = props
+
+    debugger
 
     return (
-        <WrapErrors>
-            {errors.map((err) =>
-                <Error color={err.color}>
-                    {err.label}
-                    {"  "}
-                    <span id="count">
-                        {results[err.key]}
-                    </span>
-                </Error>
-            )}
-        </WrapErrors>
+        <>
+            <WrapTitle>
+                {title}
+            </WrapTitle>
+
+            <WrapErrors>
+
+                {items?.map((item) =>
+                    <Error color={item.color}>
+                        {item.label}
+                        {"  "}
+                        <span id="count">
+                            {results[item.key]}
+                        </span>
+                    </Error>
+                )}
+            </WrapErrors>
+        </>
     )
 }
 

@@ -7,7 +7,8 @@ border-radius: 8px;
 display: flex;
 flex-direction: row;
 column-gap: 10px;
-padding: 15px;
+padding-bottom: 20px;
+padding-top:0
 `
 
 const ButtonType = styled.div`
@@ -17,7 +18,7 @@ const ButtonType = styled.div`
     cursor:${props => !props.disabled && 'pointer'};
 }
 border-radius: 6px;
-background:${props => props.selected ? '#e72d5d' : 'white'};
+background:${props => props.selected ? '#8BBC01' : 'white'};
 
 opacity:${props => props.disabled && '0.3'};
 color: ${props => props.disabled ? '#26445A' : 'white'};

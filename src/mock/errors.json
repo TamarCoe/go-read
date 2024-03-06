@@ -1,31 +1,67 @@
-[
-    {
-        "label": "מספר שינויים",
-        "key": "num_differences",
-        "color": "#00C2FF"
-    },
-    {
-        "label": "מספר ההחלפות",
-        "key": "substitution_count",
-        "color": "#FF8A00"
-    },
-    {
-        "label": "מספר ההוספות",
-        "key": "insertion_count",
-        "color": "#00DE16"
-    },
-    {
-        "label": "מילים נכונות",
-        "key": "correct_count",
-        "color": "#D100F3"
-    },
-    {
-        "key": "deletion_count",
-        "label": "מספר ההשמטות",
-        "color": "#FF5858"
-    },
-    {
-        "label": "ציון כולל",
-        "key": "overall_score"
-    }
-]
+{
+    "speech": [
+        {
+            "label": "מספר שינויים",
+            "key": "num_differences",
+            "color": "#00C2FF"
+        },
+        {
+            "label": "מספר ההחלפות",
+            "key": "substitution_count",
+            "color": "#FF8A00"
+        },
+        {
+            "label": "מספר ההוספות",
+            "key": "insertion_count",
+            "color": "#00DE16"
+        },
+        {
+            "key": "deletion_count",
+            "label": "מספר ההשמטות",
+            "color": "#FF5858"
+        },
+        {
+            "label": "חלקי דיבור מפוענכים",
+            "key": "xxx"
+        }
+    ],
+    "time": [
+        {
+            "label": "סך נקודות זמן",
+            "key": "x1",
+            "color": "#00C2FF"
+        },
+        {
+            "label": "מספר שינויים",
+            "key": "x2",
+            "color": "#FF8A00"
+        },
+        {
+            "label": "חריגות דיבור",
+            "key": "x3",
+            "color": "#00DE16"
+        },
+        {
+            "key": "x4",
+            "label": "חריגות שקט",
+            "color": "#FF5858"
+        }
+    ],
+    "voice": [
+        {
+            "label": "חריגות תדר",
+            "key": "x1",
+            "color": "#00C2FF"
+        },
+        {
+            "label": "חריגות עוצמה",
+            "key": "x2",
+            "color": "#FF8A00"
+        },
+        {
+            "label": "חריגות מעטפת",
+            "key": "x3",
+            "color": "#00DE16"
+        }
+    ]
+}

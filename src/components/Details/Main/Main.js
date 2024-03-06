@@ -2,22 +2,21 @@ import React from 'react'
 import ErrorTypes from 'components/Details/ErrorTypes'
 import DetailedView from 'components/Details/DetailedView'
 import Header from 'components/Details/Header'
-import { Wrap, Left, Right, WrapContent } from './Style'
+import { Wrap, Left, Right, Content } from './Style'
 
 const Main = () => {
 
     return (
         <>
             <Header />
-            <WrapContent>
+            <Content>
                 <Right>
                     <ErrorTypes />
-
                 </Right>
                 <Left>
                     <DetailedView />
                 </Left>
-            </WrapContent>
+            </Content>
         </>
     )
 

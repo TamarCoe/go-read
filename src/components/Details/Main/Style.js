@@ -3,4 +3,8 @@ import { WrapScreen, WrapContent, Left, Right } from 'styles/GlobalStyle'
 
 const Wrap = WrapScreen
 
-export { Wrap, Left, Right, WrapContent }
+const Content = styled(WrapContent)`
+height: calc(100% - 160px);
+`
+
+export { Wrap, Left, Right, WrapContent, Content }

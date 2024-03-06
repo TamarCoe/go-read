@@ -5,15 +5,14 @@ const WrapScreen = styled.div`
 width:100%;
 height:100%;
 display: flex;
-row-gap: 20px;
 flex-direction: column;
+overflow:hidden
 `
 
 const WrapContent = styled.div`
 display:flex;
 column-gap: 20px;
-overflow: auto;
-height:100%;
+height: calc(100% - 40px);
 ${Scroll};
 `
 
@@ -25,6 +24,8 @@ row-gap: 20px;
 display: flex;
 flex-direction: column;
 ${Scroll};
+height: calc(100% - 140px);
+
 `
 
 const DarkButton = styled.div`
@@ -39,13 +40,16 @@ opacity:${props => props.disabled && '0.3'};
 
 align-items: center;
 display: flex;
+
 `
 
 const Right = styled.div`
+overflow: auto;
 width:${props => props.size ? props.size : '15%'};    
 ${Section};
 ${Scroll};
-overflow:auto;
+height: calc(100% - 140px);
+
 `
 
 export { DarkButton, WrapScreen, WrapContent, Left, Right }

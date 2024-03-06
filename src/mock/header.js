@@ -14,6 +14,11 @@ const header = [
         label: "פירוט",
         route: "/details"
     },
+    {
+        id: 3,
+        label: "בונה שאילתות",
+        route: "/query"
+    },
 ]
 
 export default header

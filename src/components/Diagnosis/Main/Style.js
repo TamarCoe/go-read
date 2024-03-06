@@ -9,6 +9,10 @@ flex-direction: column;
 row-gap: 50px;
 `
 
+const Content = styled(WrapContent)`
+height: calc(100% - 100px);
+`
+
 const WrapErrors = styled.div`
 display: flex;
 flex-direction: column;
@@ -17,6 +21,7 @@ row-gap: 20px;
 
 const WrapLeft = styled(Left)`
 flex-direction: row;
+justify-content: space-between;
 `
 
-export { WrapErrors, Wrap, WrapLeft, Right, WrapContent, RightSection }
+export { WrapErrors, Wrap, WrapLeft, Right, Content, WrapContent, RightSection }

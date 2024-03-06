@@ -11,7 +11,7 @@ const Scroll = css`
 
 &::-webkit-scrollbar {
   
-  width: 6px;
+  width: 2px;
   height: 3px !important;
 }
 
@@ -47,6 +47,7 @@ const Section = css`
 background: #FFFFFF;
 border-radius: 16px;
 padding:20px;
+height:calc(100% - 40px)
 `
 
 const CustomButton = css`

@@ -5,7 +5,7 @@ const htmlFontSize = 16
 const coef = fontSize / 10
 
 const theme = createTheme({
-    primary: '#e72d5d',
+    primary: '#8BBC01',
     direction:'rtl'
 })
 

@@ -11,6 +11,7 @@ const CreateContext = (props) => {
     const [indexType, setIndexType] = useState(0)
     const [record, setRecord] = useState(0)
     const [indexMenuItem, setIndexMenuItem] = useState(0)
+    const [localRecord, setLocalRecord] = useState(null)
 
     const changeType = (index) => {
         setIndexTypeError(index)
@@ -60,7 +61,7 @@ const CreateContext = (props) => {
     const getByType = () => {
         const type = types[indexType].type
 
-        const recordsWords = cloneDeep(record.results.text_score)
+        const recordsWords = cloneDeep(record.results?.text_score)
         switch (type) {
             case keysTypes.all:
                 recordsWords.forEach((word) => {
@@ -88,7 +89,9 @@ const CreateContext = (props) => {
         record,
         setRecord,
         indexMenuItem,
-        setIndexMenuItem
+        setIndexMenuItem,
+        localRecord,
+        setLocalRecord
     }
 
     return (

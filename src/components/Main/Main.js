@@ -3,19 +3,18 @@ import ProfileDetails from 'components/Details/ProfileDetails'
 import Router from 'components/Router'
 import { WrapScreen } from 'styles/GlobalStyle'
 import Header from 'components/Header'
+import { WrapContent } from './Style'
+import Record from 'components/Record'
 
 const Main = () => {
 
     return (
         <WrapScreen>
-            {/* <AppBar position="static">
-                <Toolbar variant="dense">
-                   
-                </Toolbar>
-            </AppBar> */}
-            <ProfileDetails />
             <Header />
-            <Router />
+            <WrapContent>
+                <Record />
+                <Router />
+            </WrapContent>
         </WrapScreen>
     )
 }
