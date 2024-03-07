@@ -19,6 +19,7 @@ justify-content: center !important;
 column-gap: 10px !important;
 align-items: center !important;
 width: 100% !important;
+justify-content:${props => props.align && props.align} !important;
 text-align:center;
 border-radius:16px;
 color:#000000 !important;
