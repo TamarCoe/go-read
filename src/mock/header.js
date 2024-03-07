@@ -6,19 +6,19 @@ const header = [
     },
     {
         id: 1,
-        label: "מבט על",
-        route: "/brain"
-    },
-    {
-        id: 2,
-        label: "פירוט",
+        label: "פיענוח",
         route: "/details"
     },
     {
-        id: 3,
+        id: 2,
         label: "בונה שאילתות",
         route: "/query"
     },
+    {
+        id: 3,
+        label: "אינדיקציה",
+        route: "/brain"
+    }
 ]
 
 export default header
