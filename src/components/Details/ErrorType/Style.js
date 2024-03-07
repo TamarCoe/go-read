@@ -21,7 +21,7 @@ color:${props => props.selected && props.color};
 `
 
 const Dot = styled.div`
-background:${props => props.color};
+background:${props => props.customColor};
 height: 10px;
 width: 10px;
 border-radius: 30px;

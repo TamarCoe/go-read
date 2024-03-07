@@ -18,10 +18,8 @@ const ErrorType = (props) => {
             variant="outlined"
             customColor={color}
         >
-            {/* <WrapButton disabled={disabled} selected={selected} bg={bg} color={color}> */}
-            <Dot color={color} selected={selected} />
+            <Dot customColor={color} selected={selected} />
             {label}
-            {/* </WrapButton> */}
         </WrapError>
     )
 }

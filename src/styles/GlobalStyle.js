@@ -23,13 +23,13 @@ text-align:center;
 border-radius:16px;
 color:#000000 !important;
 width:140px;
-border-color:${props => props.typeBold && '#FF0000'};
-background:${props => props.errorTypeBold && props.bg};
-border-color:${props => props.errorTypeBold && props.color};
+border-color:${props => props.typeBold && '#FF0000'} !important;
+background:${props => props.errorTypeBold && props.bg} !important;
+border-color:${props => props.errorTypeBold && props.customColor} !important;
 font-size:17px !important;
 
 #bold{
-    color:#FF0000 !important;;
+    color:${props => props.warningBold ? '#FB7401' : '#FF0000'} !important;;
 }
 
 #line{

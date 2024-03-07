@@ -1,7 +1,8 @@
 const keys = {
     insertion: "INSERTION",
     omission: "OMISSION",
-    substitution: "SUBSTITUTION"
+    substitution: "SUBSTITUTION",
+    selfCorrection: 'SELF-CORRECTION'
 }
 
 const errorTypes = [

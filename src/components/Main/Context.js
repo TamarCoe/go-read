@@ -40,6 +40,9 @@ const CreateContext = (props) => {
             let nWord = { ...word }
             if (nWord.t_status != "CORRECT") {
                 nWord.bold = true
+                if (nWord.error_type && nWord.error_type[keysErrors.selfCorrection]) {
+                    nWord.warningBold = true
+                }
                 if (nWord.t_status === keysErrors.insertion === errorType) {
                     nWord.typeBold = true
                     nWord.errorTypeBold = true
@@ -65,8 +68,12 @@ const CreateContext = (props) => {
         switch (type) {
             case keysTypes.all:
                 recordsWords.forEach((word) => {
-                    if (word.t_status != "CORRECT")
+                    if (word.t_status != "CORRECT") {
                         word.bold = true
+                        if (word.error_type && word.error_type?.[keysErrors.selfCorrection]) {
+                            word.warningBold = true
+                        }
+                    }
                 })
                 break
             case keysTypes.phoneme:

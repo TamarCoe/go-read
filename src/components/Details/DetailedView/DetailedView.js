@@ -15,7 +15,7 @@ const DetailedView = () => {
     return (
         <WrapDetails>
             {getByType().map((item, index) => {
-                const { bold, reference_word, transcription, typeBold, errorTypeBold } = item
+                const { bold, reference_word, transcription, typeBold, errorTypeBold, warningBold } = item
                 return (
                     <div className='detailView'>
                         <Card
@@ -24,8 +24,9 @@ const DetailedView = () => {
                             bold={bold} //bold all errors
                             errorTypeBold={errorTypeBold}//bold all types with border
                             typeBold={typeBold}//bold all error type with background
+                            warningBold={warningBold}
                             bg={errorTypeBold && errorType?.bg}
-                            color={errorTypeBold && errorType?.color}
+                            customColor={errorTypeBold && errorType?.color}
                         >
                             {reference_word || !bold && transcription}
 
