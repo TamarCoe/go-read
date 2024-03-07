@@ -3,7 +3,12 @@ import { Left, Right, WrapContent, } from "styles/GlobalStyle";
 import { dark, primary, secondary } from "styles/theme";
 import { IconButton } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
-import { Section as CardSection } from 'styles/GlobalCss'
+import { Section as CardSection, Scroll } from 'styles/GlobalCss'
+
+const WrapFooterButtons = styled.div`
+display: flex;
+justify-content: space-between;
+`
 
 const StyledAddCircleOutlineIcon = styled(AddIcon)`
 font-size:25px !important;
@@ -17,10 +22,16 @@ background:#F3F6F9 !important;
 `
 
 const WrapQuery = styled.div`
-height:100%;
+height: calc(100% - 200px);
 display: flex;
 row-gap: 10px;
 flex-direction: column;
+overflow:auto;
+
+${Scroll};
+
+.footerButtons{
+}
 
 #title{
     color:${dark};
@@ -102,4 +113,4 @@ const Content = styled(WrapContent)`
 }
 `
 
-export { WrapSection, StyledIconButton, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content }
+export { WrapFooterButtons, WrapSection, StyledIconButton, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content }

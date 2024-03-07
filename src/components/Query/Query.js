@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { StyledIconButton, WrapSection, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content } from './Style'
+import { StyledIconButton, WrapFooterButtons, WrapSection, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content } from './Style'
 import Select from 'components/Select'
 import query from 'mock/query.json'
+import { Button } from '@mui/material'
 
 const Query = () => {
     const [if_done, set_if_done] = useState(null)
@@ -69,6 +70,14 @@ const Query = () => {
                     <div className='conclusion'></div>
                 </div>
             </WrapSection>
+            <WrapFooterButtons>
+                <Button className='footerButtons' disabled variant='outlined'>
+                    הוסף לאינדיקציות
+                </Button>
+                <Button className='footerButtons' disabled variant='outlined'>
+                    לצפייה באינדיקציות
+                </Button>
+            </WrapFooterButtons>
         </WrapQuery>
     )
 
