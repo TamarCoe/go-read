@@ -56,6 +56,7 @@ width:140px;
 border-color:${props => props.typeBold && '#FF0000'};
 background:${props => props.errorTypeBold && props.bg};
 border-color:${props => props.errorTypeBold && props.color};
+font-size:17px !important;
 
 #bold{
     color:#FF0000 !important;;
