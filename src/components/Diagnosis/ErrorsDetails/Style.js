@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { CustomButton, Scroll } from "styles/GlobalCss";
-import { dark, primary } from "styles/theme";
+import { dark, primary, secondary } from "styles/theme";
 
 const WrapErrors = styled.div`
 display: flex;
@@ -29,7 +29,7 @@ font-size:15px;
 #count{
    margin-right:7px;
    font-weight: bold;
-   color:${props => props.color};
+   color:${props => primary};
 }
 `
 
