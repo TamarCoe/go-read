@@ -8,6 +8,8 @@ height:auto;
 margin-bottom:10px;
 display:flex;
 column-gap: 10px;
+justify-content: center;
+align-items:center;
 
 #play{
     width:40px !important;
@@ -17,6 +19,12 @@ column-gap: 10px;
 #record{
     width:calc(100% - 40px) !important;
 }
+
+.linearProgress{
+    width:100% !important;
+}
+
+height:40px;
 
 `
 

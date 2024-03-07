@@ -3,7 +3,7 @@ import WavesurferPlayer from '@wavesurfer/react'
 import PauseIcon from '@mui/icons-material/Pause';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import { WrapRecord } from './Style'
-import { IconButton } from '@mui/material'
+import { IconButton, LinearProgress, CircularProgress } from '@mui/material'
 import { Context } from 'components/Main/Context';
 import { primary } from 'styles/theme';
 
@@ -22,23 +22,30 @@ const App = () => {
     }
 
     return (
-        record && (record.recording_file || !localRecord) ?
-            <WrapRecord>
-                <div id="record">
-                    <WavesurferPlayer
-                        id="record"
-                        height={40}
-                        waveColor={primary}
-                        url={localRecord ? record.recording_file : require(`../../records/${record?.filename}`)}
-                        onReady={onReady}
-                        onPlay={() => setIsPlaying(true)}
-                        onPause={() => setIsPlaying(false)}
-                    />
+        <WrapRecord>
+            {record && record.recording_file ?
+                <>
+                    <div id="record">
+
+                        <WavesurferPlayer
+                            id="record"
+                            height={40}
+                            waveColor={primary}
+                            url={record.recording_file}
+                            onReady={onReady}
+                            onPlay={() => setIsPlaying(true)}
+                            onPause={() => setIsPlaying(false)}
+                        />
+                    </div>
+                    <IconButton id={"play"} onClick={onPlayPause}>
+                        {isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
+                    </IconButton>
+                </> :
+                <div className='linearProgress'>
+                    <LinearProgress/>
                 </div>
-                <IconButton id={"play"} onClick={onPlayPause}>
-                    {isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
-                </IconButton>
-            </WrapRecord> : null
+            }
+        </WrapRecord>
     )
 }
 
