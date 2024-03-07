@@ -13,7 +13,7 @@ const Main = () => {
                 <Right>
                     <ErrorTypes />
                 </Right>
-                <Left>
+                <Left className='left'>
                     <DetailedView />
                 </Left>
             </Content>

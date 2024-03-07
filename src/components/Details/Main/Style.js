@@ -5,6 +5,10 @@ const Wrap = WrapScreen
 
 const Content = styled(WrapContent)`
 height: calc(100% - 160px);
+
+.left{
+    align-items:center
+}
 `
 
 export { Wrap, Left, Right, WrapContent, Content }

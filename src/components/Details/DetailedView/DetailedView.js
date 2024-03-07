@@ -17,27 +17,29 @@ const DetailedView = () => {
             {getByType().map((item, index) => {
                 const { bold, reference_word, transcription, typeBold, errorTypeBold } = item
                 return (
-                    <Card
-                        disabled
-                        key={index}
-                        bold={bold} //bold all errors
-                        errorTypeBold={errorTypeBold}//bold all types with border
-                        typeBold={typeBold}//bold all error type with background
-                        bg={errorTypeBold && errorType?.bg}
-                        color={errorTypeBold && errorType?.color}
-                    >
-                        {reference_word || !bold && transcription}
+                    <div className='detailView'>
+                        <Card
+                            disabled
+                            key={index}
+                            bold={bold} //bold all errors
+                            errorTypeBold={errorTypeBold}//bold all types with border
+                            typeBold={typeBold}//bold all error type with background
+                            bg={errorTypeBold && errorType?.bg}
+                            color={errorTypeBold && errorType?.color}
+                        >
+                            {reference_word || !bold && transcription}
 
-                        {bold &&
-                            <span id="bold">
-                                <span id="line">
-                                    {reference_word && "|"}
+                            {bold &&
+                                <span id="bold">
+                                    <span id="line">
+                                        {reference_word && "|"}
+                                    </span>
+                                    {transcription}
                                 </span>
-                                {transcription}
-                            </span>
-                        }
+                            }
 
-                    </Card>
+                        </Card>
+                    </div>
                 )
             }
             )}

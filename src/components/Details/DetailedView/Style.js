@@ -3,6 +3,11 @@ import styled from "styled-components";
 
 
 const WrapDetails = styled.div`
+.detailView{
+width:200px;
+}
+
+width:90%;
 // display: grid;
 // grid-template-columns: 1fr 1fr 1fr;
 // grid-auto-flow: column;
@@ -26,22 +31,6 @@ const WrapDetails = styled.div`
 	grid-template-columns: repeat(3, 1fr); 
 	grid-template-rows: repeat(20, auto);    
   padding:20px;
-// @media (max-width: 1700px) {
-  //   grid-template-columns: repeat(4, 1fr);
-  // }
-
-  // @media (max-width: 1200px) {
-  //   grid-template-columns: repeat(3, 1fr);
-  // }
-
-  // @media (max-width: 900px) {
-  //   grid-template-columns: repeat(2, 1fr);
-  // }
-
-  // @media (max-width: 700px) {
-  //   grid-template-columns: repeat(1, 1fr);
-  // }
-
 `
 
 const WrapDetail = styled(Button)`
