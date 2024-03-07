@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Section, Scroll } from 'styles/GlobalCss'
 import { dark } from "styles/theme";
+import { Button } from '@mui/material'
 
 const WrapScreen = styled.div`
 width:100%;
@@ -8,6 +9,32 @@ height:100%;
 display: flex;
 flex-direction: column;
 overflow:hidden
+`
+
+const Card = styled(Button)`
+border:1px solid #DDDDDD !important;;
+border:${props => props.bold && '1px solid #000000 !important'};
+padding:8px;
+width: 100%;
+text-align:center;
+border-radius:16px;
+color:#000000 !important;
+width:140px;
+border-color:${props => props.typeBold && '#FF0000'};
+background:${props => props.errorTypeBold && props.bg};
+border-color:${props => props.errorTypeBold && props.color};
+font-size:17px !important;
+
+#bold{
+    color:#FF0000 !important;;
+}
+
+#line{
+    color:#E2E2E2 !important;
+    margin-right:5px !important;
+    margin-left:5px !important;
+}
+
 `
 
 const WrapContent = styled.div`
@@ -53,4 +80,4 @@ height: calc(100% - 140px);
 
 `
 
-export { DarkButton, WrapScreen, WrapContent, Left, Right }
+export { Card, DarkButton, WrapScreen, WrapContent, Left, Right }

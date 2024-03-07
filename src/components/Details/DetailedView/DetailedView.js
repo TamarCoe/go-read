@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Context } from 'components/Main/Context'
 import { WrapDetails, WrapDetail } from './Style'
 import { errorTypes } from 'mock'
+import { Card } from 'styles/GlobalStyle'
 
 const DetailedView = () => {
     const {
@@ -16,7 +17,7 @@ const DetailedView = () => {
             {getByType().map((item, index) => {
                 const { bold, reference_word, transcription, typeBold, errorTypeBold } = item
                 return (
-                    <WrapDetail
+                    <Card
                         disabled
                         key={index}
                         bold={bold} //bold all errors
@@ -36,7 +37,7 @@ const DetailedView = () => {
                             </span>
                         }
 
-                    </WrapDetail>
+                    </Card>
                 )
             }
             )}
