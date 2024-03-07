@@ -10,11 +10,18 @@ const ErrorType = (props) => {
     const selected = indexTypeError === index
 
     return (
-        <WrapError disabled={disabled} onClick={() => !disabled && changeType(index)}>
-            <WrapButton disabled={disabled} selected={selected} bg={bg} color={color}>
-                <Dot color={color} selected={selected} />
-                {label}
-            </WrapButton>
+        <WrapError
+            disabled={disabled}
+            onClick={() => !disabled && changeType(index)}
+            selected={selected}
+            bg={bg}
+            variant="outlined"
+            customColor={color}
+        >
+            {/* <WrapButton disabled={disabled} selected={selected} bg={bg} color={color}> */}
+            <Dot color={color} selected={selected} />
+            {label}
+            {/* </WrapButton> */}
         </WrapError>
     )
 }

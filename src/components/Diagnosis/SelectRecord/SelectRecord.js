@@ -1,10 +1,12 @@
 import React, { useContext, useEffect } from 'react'
 import records from 'mock/records'
+import Upload from 'components/Diagnosis/UploadRecord/UploadButton'
+import UploadRecord from 'components/Diagnosis/UploadRecord'
+import SpatialAudioOffIcon from '@mui/icons-material/SpatialAudioOff';
+import UploadFileIcon from '@mui/icons-material/UploadFile';
 import { Context } from 'components/Main/Context'
 import { FormControl, InputLabel, Select, MenuItem, Button } from '@mui/material'
 import { StartButton, WrapSelectRecord, UploadButton } from './Style'
-import Upload from 'components/Diagnosis/UploadRecord/UploadButton'
-import UploadRecord from 'components/Diagnosis/UploadRecord'
 
 const SelectRecord = () => {
     const { record, setRecord, localRecord, setLocalRecord } = useContext(Context)
@@ -24,7 +26,10 @@ const SelectRecord = () => {
 
     return (
         <WrapSelectRecord dir="rtl">
-            <Button onClick={() => changeFlag(false)}>בחירת הקלטה </Button>
+            <Button variant="contained" className="selectRecord button" onClick={() => changeFlag(false)}>
+                <SpatialAudioOffIcon />
+                בחירת  הקלטה
+            </Button>
             {localRecord === false &&
                 <FormControl fullWidth>
                     <Select dir="rtl"
@@ -52,17 +57,17 @@ const SelectRecord = () => {
                     </Select>
 
                 </FormControl>}
-            <Button onClick={() => changeFlag(true)}>העלאת הקלטה </Button>
+            <Button variant="outlined" className="uploadRecord button" onClick={() => changeFlag(true)}>
+                <UploadFileIcon />
+                העלאת הקלטה
+            </Button>
             {
                 localRecord &&
-                <>
+                <div className='uploadButtons'>
                     <Upload handleChange={handleChange} title={"העלאת קובף פיענוח"} />
                     <UploadRecord />
-                </>
+                </div>
             }
-            <StartButton disabled={!(record.filename && record.recording_url_file)}>
-                פיענוח
-            </StartButton>
         </WrapSelectRecord>
     )
 }

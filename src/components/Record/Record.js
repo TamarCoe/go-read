@@ -5,11 +5,12 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import { WrapRecord } from './Style'
 import { IconButton } from '@mui/material'
 import { Context } from 'components/Main/Context';
+import { primary } from 'styles/theme';
 
 const App = () => {
     const [wavesurfer, setWavesurfer] = useState(null)
     const [isPlaying, setIsPlaying] = useState(false)
-    const { record,localRecord } = useContext(Context)
+    const { record, localRecord } = useContext(Context)
 
     const onReady = (ws) => {
         setWavesurfer(ws)
@@ -21,14 +22,14 @@ const App = () => {
     }
 
     return (
-        record ?
+        record && (record.recording_file || !localRecord) ?
             <WrapRecord>
                 <div id="record">
                     <WavesurferPlayer
                         id="record"
                         height={40}
-                        waveColor="#8BBC01"
-                        url={localRecord ? record.recording_url_file : require(`../../records/${record?.filename}`)}
+                        waveColor={primary}
+                        url={localRecord ? record.recording_file : require(`../../records/${record?.filename}`)}
                         onReady={onReady}
                         onPlay={() => setIsPlaying(true)}
                         onPause={() => setIsPlaying(false)}

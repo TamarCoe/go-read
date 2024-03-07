@@ -1,6 +1,7 @@
 import regularStyled from "styled-components";
 import { styled } from '@mui/material/styles';
 import { Button } from '@mui/material'
+import { dark, secondary } from "styles/theme";
 
 const VisuallyHiddenInput = styled('input')({
     clip: 'rect(0 0 0 0)',
@@ -23,7 +24,9 @@ flex-direction: column;
 const UploadButton = regularStyled(Button)`
 display: flex;
 column-gap: 10px;
-background:#8BBC01 !important
+color:${dark} !important;
+background: transparent !important;
+border-radius: 30px !important;
 
 `
 

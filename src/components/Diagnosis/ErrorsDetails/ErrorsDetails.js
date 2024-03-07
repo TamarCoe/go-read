@@ -8,18 +8,16 @@ const ErrorsDetails = (props) => {
         { results = {} } = record
     const { items, title } = props
 
-    debugger
-
     return (
         <>
             <WrapTitle>
                 {title}
             </WrapTitle>
 
-            <WrapErrors>
+            <WrapErrors className='Flex-item'>
 
                 {items?.map((item) =>
-                    <Error color={item.color}>
+                    <Error disabled={item.disabled} color={item.color}>
                         {item.label}
                         {"  "}
                         <span id="count">

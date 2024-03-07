@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { Left, Right, WrapContent, } from "styles/GlobalStyle";
+import { dark } from "styles/theme";
 
 
 const WrapQuery = styled.div`
 height:100%;
 
 #title{
-    color:#26445A;
+    color:${dark};
     font-size:20px;
     padding:20px;
     font-weight: bold;

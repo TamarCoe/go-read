@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { dark } from "styles/theme";
 
 
 const WrapImg = styled.div`
@@ -35,7 +36,7 @@ border-radius: 100px;
 display: flex;
 align-items: center;
 justify-content: center;
-color:#26445A;
+color:${dark};
 font-size:12px;
 text-align: center;
 border:${props => props.error && '2px solid red'}

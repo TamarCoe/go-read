@@ -18,13 +18,12 @@ const Header = (props) => {
         <WrapHeader>
             {types.map((type, index) =>
                 <ButtonType
+                    variant={indexType === index ? "contained" : "outlined"}
                     onClick={() => changeType(type, index)}
                     selected={indexType === index}
                     key={type.id}
                     disabled={type.disabled}>
-                    <Button>
-                        {type.label}
-                    </Button>
+                    {type.label}
                 </ButtonType>
             )}
         </WrapHeader>

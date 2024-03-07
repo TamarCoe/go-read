@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Section, Scroll } from 'styles/GlobalCss'
+import { dark } from "styles/theme";
 
 const WrapScreen = styled.div`
 width:100%;
@@ -33,7 +34,7 @@ const DarkButton = styled.div`
     box-shadow:${props => !props.disabled && '0px 0px 30px rgba(0, 0, 0, 0.2)'};
     cursor:${props => !props.disabled && 'pointer'};
 }
-color: ${props => props.selected ? '#26445A' : 'white'};
+color: ${props => props.selected ? dark : 'white'};
 border-radius: 6px;
 background:${props => props.selected ? '#F3F6F9' : '#416783'};
 opacity:${props => props.disabled && '0.3'};

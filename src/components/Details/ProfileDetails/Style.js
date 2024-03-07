@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { dark } from "styles/theme";
 
 const Wrap = styled.div`
 background: white;
@@ -33,7 +34,7 @@ const Avatar = styled.img`
 const Name = styled.div`
 font-size: 20px;
 font-weight: bold;
-color:#26445A;
+color:${dark};
 `
 
 export { AgeAndGrade, Name, Details, Wrap, Avatar }

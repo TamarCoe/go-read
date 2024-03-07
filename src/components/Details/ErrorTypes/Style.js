@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Hover, Scroll } from 'styles/GlobalCss'
+import { dark } from 'styles/theme'
 
 const WrapErrorTypes = styled.div`
 row-gap:20px;
@@ -13,7 +14,7 @@ ${Hover};
 `
 
 const Title = styled.div`
-color:#26445A;
+color:${dark};
 text-align:right;
 // padding:10px;
 `

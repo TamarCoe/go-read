@@ -12,7 +12,6 @@ const Upload = (props) => {
             variant="contained"
             tabIndex={-1}
         >
-            <CloudUpload />
             {title}
             <VisuallyHiddenInput type="file" onChange={handleChange} />
         </UploadButton>

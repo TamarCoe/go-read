@@ -1,9 +1,15 @@
 import styled from "styled-components";
 import { Hover, CustomButton } from 'styles/GlobalCss'
+import { Button } from "@mui/material";
+import { dark } from "styles/theme";
 
-const WrapError = styled.div`
-${props => !props.disabled && Hover};
-border-radius: 10px;
+const WrapError = styled(Button)`
+background:${props => props.selected && props.bg} !important;
+border-color:${props => !props.disabled && (props.selected ? props.customColor : '#D7D7D7')} !important;
+color:${props => !props.disabled && (props.selected ? props.customColor : dark)} !important;
+display: flex !important;
+justify-content: start !important;
+column-gap: 10px !important;
 `
 
 const WrapButton = styled.div`
