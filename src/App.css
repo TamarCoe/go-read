@@ -4,8 +4,11 @@ body {
   background-color: #F3F6F9;
   padding-top: 100px;
   padding-bottom: 20px;
-  margin:0;
+  margin: 0;
   overflow: hidden;
+  color: #26445A;
+  font-size: 17px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .App {

@@ -9,7 +9,7 @@ const theme = createTheme({
     direction: 'rtl'
 })
 
-const secondary = '#FB7401'
+const secondary = '#1a76d2'
 const primary = "#8BBC01"
 const dark = "#26445A"
 

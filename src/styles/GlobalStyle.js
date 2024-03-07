@@ -39,8 +39,7 @@ font-size:17px !important;
 
 const WrapContent = styled.div`
 display:flex;
-column-gap: 20px;
-height: calc(100% - 40px);
+column-gap: 10px;
 ${Scroll};
 `
 

@@ -1,41 +1,105 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Left, Right, WrapContent, } from "styles/GlobalStyle";
-import { dark } from "styles/theme";
+import { dark, primary, secondary } from "styles/theme";
+import { IconButton } from '@mui/material'
+import AddIcon from '@mui/icons-material/Add';
+import { Section as CardSection } from 'styles/GlobalCss'
 
+const StyledAddCircleOutlineIcon = styled(AddIcon)`
+font-size:25px !important;
+color:#8C8C8C;
+`
+
+const StyledIconButton = styled(IconButton)`
+width:50px !important;
+height:50px !important;
+background:#F3F6F9 !important;
+`
 
 const WrapQuery = styled.div`
 height:100%;
+display: flex;
+row-gap: 10px;
+flex-direction: column;
 
 #title{
     color:${dark};
     font-size:20px;
-    padding:20px;
-    font-weight: bold;
+    padding-bottom:10px;
 }
 `
 
-const WrapLeft = styled(Left)`
+const WrapSection = styled.div`
+${CardSection};
+
+display:flex;
+row-gap: 10px;
+flex-direction: column;
+height:120px;
+
+.overallSummary{
+display:flex;
+justify-content: center;
+align-items: center;
+column-gap: 15px;
+row-gap: 15px;
+}
+
+.titleConclusion{
+    font-weight: bold;
+    width:140px
+}
+
+.conclusion{
+    width:750px;
+    padding:13px 50px 13px 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    font-weight: 100;
+    height:30px;
+    align-items: center;
+    display: flex;
+}
+`
+
+const Section = css`
 width:50%;
-height:100%;
+height:240px;
 display: flex;
 flex-direction: column;
 row-gap: 20px;
+overflow:hidden;
 
-#select{
-    width:50px !imporant;
+.row{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+`
+
+const WrapLeft = styled(Left)`
+.ifTitle{
+    color:${secondary};
+    font-size:18px;
+    font-weight: bold;
 }
+${Section};
 `
 
 const WrapRight = styled(Right)`
-width:50%;
-height:100%
+.indicateTitle{
+    color:${primary};
+    font-size:18px;
+    font-weight: bold;
+}
 
+${Section};
 `
 
 const Content = styled(WrapContent)`
+
 #select{
     width:50px !imporant;
 }
 `
 
-export { WrapQuery, WrapLeft, WrapRight, Content }
+export { WrapSection, StyledIconButton, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content }
