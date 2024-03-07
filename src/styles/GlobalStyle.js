@@ -12,10 +12,13 @@ overflow:hidden
 `
 
 const Card = styled(Button)`
-border:1px solid #DDDDDD !important;;
+border:1px solid #DDDDDD !important;
 border:${props => props.bold && '1px solid #000000 !important'};
-padding:8px;
-width: 100%;
+display: flex !important;
+justify-content: center !important;
+column-gap: 10px !important;
+align-items: center !important;
+width: 100% !important;
 text-align:center;
 border-radius:16px;
 color:#000000 !important;

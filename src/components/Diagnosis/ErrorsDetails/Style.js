@@ -8,11 +8,13 @@ flex-direction: column;
 row-gap: 35px;
 padding-left:20px;
 ${Scroll};
-overflow-y:auto;
-overflow-x:hidden;
 
 .Flex-item {
    line-height: 40px;
+}
+
+.wrapError{
+   width:200px;
 }
 
 .Flex-item + .Flex-item {
@@ -26,18 +28,18 @@ opacity:${props => props.disabled && '0.5'};
 color:${dark};
 font-size:15px;
 
-#count{
-   margin-right:7px;
-   font-weight: bold;
-   color:${props => primary};
-}
+`
+
+const Conut = styled.span`
+font-weight: bold !important;
+color:${secondary} !important;
 `
 
 const WrapTitle = styled.div`
 font-weight: bold;
-color: ${dark};
+color: ${secondary};
 margin-bottom:10px;
 font-size:16px;
 `
 
-export { WrapErrors, Error, WrapTitle }
+export { Conut, WrapErrors, Error, WrapTitle }

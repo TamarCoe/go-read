@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import errors from 'mock/errors.json'
 import { Context } from 'components/Main/Context'
-import { WrapErrors, Error, WrapTitle } from './Style'
+import { WrapErrors, Error, WrapTitle, Conut } from './Style'
+import { Card as WrapError } from 'styles/GlobalStyle'
 
 const ErrorsDetails = (props) => {
     const { record = {} } = useContext(Context),
@@ -17,13 +18,15 @@ const ErrorsDetails = (props) => {
             <WrapErrors className='Flex-item'>
 
                 {items?.map((item) =>
-                    <Error disabled={item.disabled} color={item.color}>
-                        {item.label}
-                        {"  "}
-                        <span id="count">
-                            {results[item.key]}
-                        </span>
-                    </Error>
+                    <div className='wrapError'>
+                        <WrapError disabled>
+                            {item.label}
+                            {"  "}
+                            <Conut>
+                                {results[item.key]}
+                            </Conut>
+                        </WrapError>
+                    </div>
                 )}
             </WrapErrors>
         </>

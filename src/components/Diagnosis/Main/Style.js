@@ -21,7 +21,9 @@ row-gap: 20px;
 
 const WrapLeft = styled(Left)`
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
+overflow: auto;
+height: auto;
 `
 
 export { WrapErrors, Wrap, WrapLeft, Right, Content, WrapContent, RightSection }
