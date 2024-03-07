@@ -64,7 +64,7 @@ const SelectRecord = () => {
             {
                 localRecord &&
                 <div className='uploadButtons'>
-                    <Upload handleChange={handleChange} title={"העלאת קובף פיענוח"} />
+                    <Upload handleChange={handleChange} title={"העלאת קובץ פיענוח"} />
                     <UploadRecord />
                 </div>
             }
