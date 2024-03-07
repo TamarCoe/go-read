@@ -1,7 +1,7 @@
 const header = [
     {
         id: 0,
-        label: "בחירת אבחון",
+        label: "בחירת אודיו",
         route: "/"
     },
     {
