@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import styled from "styled-components";
 
 
@@ -43,25 +44,27 @@ const WrapDetails = styled.div`
 
 `
 
-const WrapDetail = styled.div`
-border:1px solid #DDDDDD;
-border:${props => props.bold && '1px solid #000000'};
+const WrapDetail = styled(Button)`
+border:1px solid #DDDDDD !important;;
+border:${props => props.bold && '1px solid #000000 !important'};
 padding:8px;
 width: 100%;
 text-align:center;
 border-radius:16px;
-color:#000000;
+color:#000000 !important;
 width:140px;
 border-color:${props => props.typeBold && '#FF0000'};
 background:${props => props.errorTypeBold && props.bg};
 border-color:${props => props.errorTypeBold && props.color};
 
 #bold{
-    color:#FF0000;
+    color:#FF0000 !important;;
 }
 
 #line{
-    color:#E2E2E2;
+    color:#E2E2E2 !important;
+    margin-right:5px !important;
+    margin-left:5px !important;
 }
 
 `

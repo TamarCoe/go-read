@@ -17,19 +17,20 @@ const DetailedView = () => {
                 const { bold, reference_word, transcription, typeBold, errorTypeBold } = item
                 return (
                     <WrapDetail
+                        disabled
                         key={index}
-                       bold={bold} //bold all errors
+                        bold={bold} //bold all errors
                         errorTypeBold={errorTypeBold}//bold all types with border
                         typeBold={typeBold}//bold all error type with background
                         bg={errorTypeBold && errorType?.bg}
-                       X color={errorTypeBold && errorType?.color}
+                        color={errorTypeBold && errorType?.color}
                     >
                         {reference_word || !bold && transcription}
 
                         {bold &&
                             <span id="bold">
                                 <span id="line">
-                                    {reference_word && " | "}
+                                    {reference_word && "|"}
                                 </span>
                                 {transcription}
                             </span>
