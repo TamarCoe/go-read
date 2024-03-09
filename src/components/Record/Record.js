@@ -49,9 +49,7 @@ const App = () => {
                     </div>
 
                 </> :
-                <div className='linearProgress'>
-                    <LinearProgress color="secondary" />
-                </div>
+               <></>
             }
         </WrapRecord>
     )

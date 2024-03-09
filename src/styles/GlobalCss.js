@@ -1,4 +1,5 @@
 import { css } from 'styled-components'
+import { primary, secondary } from './theme'
 
 const Hover = css`
 :hover{
@@ -17,16 +18,17 @@ const Scroll = css`
 
 &::-webkit-scrollbar-track {
   border-radius: 30px;
-  box-shadow: inset 0 0 5px rgba(51, 102, 255, 0.155731);
+  // box-shadow: inset 0 0 5px rgba(51, 102, 255, 0.155731);
 }
 
 &::-webkit-scrollbar-thumb {
   border-radius: 30px;
-  background: #3366ff5b;
+  background: ${secondary};
+
 }
 
 & ::-webkit-scrollbar-thumb:hover {
-  background: #3366ff;
+  background: ${secondary};
 }
 
 
