@@ -35,8 +35,8 @@ const Query = () => {
                 <WrapRight>
                     <div className='indicateTitle'>אינדקציות</div>
                     <div className='row'>
-                        <Select value={according_to_sensitivity} label="על פי רגישות" handleChange={set_according_to_sensitivity} items={query.according_to_sensitivity} />
                         <Select value={indication} width={'200px'} label="אינדיקציה לתחום קושי" handleChange={set_indication} items={query.indication} />
+                        <Select value={according_to_sensitivity} label="על פי רגישות" handleChange={set_according_to_sensitivity} items={query.according_to_sensitivity} />
                     </div>
                 </WrapRight>
             </Content>
@@ -58,11 +58,12 @@ const Query = () => {
                         {"ועונה לקריטריון "}
                         {meets_the_criteria?.label || "______"}
                         {" "}
+                        {", יש אינדיקציה לקושי "}
+                        {indication?.label || "______"}
+                        {" "}
                         {"על פי רגישות"}
                         {" "}
                         {according_to_sensitivity?.label || "______"}
-                        {", יש אינדיקציה לקושי "}
-                        {indication?.label || "______"}
                     </div>
                 </div>
                 <div className='overallSummary'>
