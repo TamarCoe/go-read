@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { Left, Right, WrapContent, } from "styles/GlobalStyle";
 import { dark, primary, secondary } from "styles/theme";
-import { IconButton } from '@mui/material'
+import { IconButton, Select } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 import { Section as CardSection, Scroll } from 'styles/GlobalCss'
 

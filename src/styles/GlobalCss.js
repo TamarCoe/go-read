@@ -3,7 +3,7 @@ import { primary, secondary } from './theme'
 
 const Hover = css`
 :hover{
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   cursor:pointer;
 }
 `

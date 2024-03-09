@@ -1,4 +1,5 @@
 import React from 'react'
+import { MuiSelect } from './Style'
 import { FormControl, Select, MenuItem } from '@mui/material'
 
 const CustomSelect = (props) => {
@@ -7,7 +8,7 @@ const CustomSelect = (props) => {
     return (
         <div style={{ width: width }}>
             <FormControl fullWidth>
-                <Select dir="rtl"
+                <MuiSelect dir="rtl"
                     displayEmpty
                     renderValue={(selected) => {
                         if (!selected) {
@@ -31,7 +32,7 @@ const CustomSelect = (props) => {
                             <MenuItem value={item}>{item.label}</MenuItem>
                         )
                     }
-                </Select >
+                </MuiSelect >
 
             </FormControl >
         </div>

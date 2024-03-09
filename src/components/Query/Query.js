@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { StyledIconButton, WrapFooterButtons, WrapSection, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content } from './Style'
+import { StyledIconButton, WrapSelect, WrapFooterButtons, WrapSection, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content } from './Style'
 import Select from 'components/Select'
 import query from 'mock/query.json'
 import { Button } from '@mui/material'
