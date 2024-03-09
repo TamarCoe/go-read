@@ -50,7 +50,7 @@ ${Scroll};
 const Left = styled.div`
 width:${props => props.size ? props.size : '85%'};  
 overflow: auto;
-${Section}
+${Section};
 row-gap: 20px;
 display: flex;
 flex-direction: column;

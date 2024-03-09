@@ -14,7 +14,6 @@ padding-top:0
 
 const ButtonType = styled(Button)`
 border-radius: 6px;
-
 align-items: center;
 display: flex;
 `

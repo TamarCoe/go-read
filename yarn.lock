@@ -8354,6 +8354,11 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-wavesurfer@^0.8.6:
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/react-wavesurfer/-/react-wavesurfer-0.8.6.tgz#da05f3f501e566a63853f9babec45a5251111538"
+  integrity sha512-uHJxtFtb/NqM9DnQNGJNsukmutJ2EOUvLGFkg3GXUY779xYhU+hg1juwstBfky4xtGyZohdUCyQOJfRzzUwBpA==
+
 react-wavy-audio@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-wavy-audio/-/react-wavy-audio-1.0.3.tgz#156f42f3a3d1d6c4646e12a17f1fcdb817d1d3f5"

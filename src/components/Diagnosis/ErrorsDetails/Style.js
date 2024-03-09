@@ -37,7 +37,6 @@ color:${secondary} !important;
 
 const WrapTitle = styled.div`
 font-weight: bold;
-color: ${secondary};
 margin-bottom:10px;
 font-size:18px;
 `
