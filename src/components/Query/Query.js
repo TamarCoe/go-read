@@ -27,7 +27,6 @@ const Query = () => {
                     </div>
                     <div className='row'>
                         <Select value={meets_the_criteria} label="ועונה לקריטריון" handleChange={set_meets_the_criteria} items={query.meets_the_criteria} />
-                        <Select value={according_to_sensitivity} label="על פי רגישות" handleChange={set_according_to_sensitivity} items={query.according_to_sensitivity} />
                     </div>
                     <StyledIconButton disabled>
                         <StyledAddCircleOutlineIcon />
@@ -36,6 +35,7 @@ const Query = () => {
                 <WrapRight>
                     <div className='indicateTitle'>אינדקציות</div>
                     <div className='row'>
+                        <Select value={according_to_sensitivity} label="על פי רגישות" handleChange={set_according_to_sensitivity} items={query.according_to_sensitivity} />
                         <Select value={indication} width={'200px'} label="אינדיקציה לתחום קושי" handleChange={set_indication} items={query.indication} />
                     </div>
                 </WrapRight>
