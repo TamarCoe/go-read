@@ -43,6 +43,14 @@ const CreateContext = (props) => {
                 if (nWord.error_type && nWord.error_type[keysErrors.selfCorrection]) {
                     nWord.warningBold = true
                 }
+                if (nWord.error_type && nWord.error_type[keysErrors.selfCorrection] && errorType === keysErrors.selfCorrection) {
+                    nWord.typeBold = true
+                    nWord.errorTypeBold = true
+                }
+                if (nWord.error_type && nWord.error_type[keysErrors.transposition] && errorType === keysErrors.transposition) {
+                    nWord.typeBold = true
+                    nWord.errorTypeBold = true
+                }
                 if (nWord.t_status === keysErrors.insertion === errorType) {
                     nWord.typeBold = true
                     nWord.errorTypeBold = true

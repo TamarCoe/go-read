@@ -2,7 +2,8 @@ const keys = {
     insertion: "INSERTION",
     omission: "OMISSION",
     substitution: "SUBSTITUTION",
-    selfCorrection: 'SELF-CORRECTION'
+    selfCorrection: 'SELF-CORRECTION',
+    transposition: 'TRANSPOSITION'
 }
 
 const errorTypes = [
@@ -16,7 +17,7 @@ const errorTypes = [
     {
         id: 2,
         label: "השמטה",
-        color: "#FF8A00",
+        color: "#D100F3",
         type: keys.omission,
         bg: "#fffaf6"
     },
@@ -30,9 +31,9 @@ const errorTypes = [
     {
         id: 4,
         label: "תיקון עצמי",
-        color: "#D100F3",
-        type: "self-correction",
-        disabled: true
+        color: "#FF8A00",
+        type: keys.selfCorrection,
+        bg: "#fffaf6"
     },
     {
         id: 5,
@@ -45,8 +46,8 @@ const errorTypes = [
         id: 6,
         label: "סיכול",
         color: "#0047FF",
-        type: "transposition",
-        disabled: true
+        type: keys.transposition,
+        bg:'#cfdbff'
     },
     // {
     //     id: 7,

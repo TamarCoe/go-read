@@ -6,11 +6,7 @@ import { WrapRecord } from './Style'
 import { IconButton, LinearProgress, CircularProgress } from '@mui/material'
 import { Context } from 'components/Main/Context';
 import { primary } from 'styles/theme';
-// const Minimap = dynamic(
-//     () => import("../../../node_modules/react-wavesurfer/lib/plugins/minimap"),
-//     { ssr: false }
 
-// )
 const App = () => {
     const [wavesurfer, setWavesurfer] = useState(null)
     const [isPlaying, setIsPlaying] = useState(false)
@@ -49,7 +45,7 @@ const App = () => {
                     </div>
 
                 </> :
-               <></>
+                <></>
             }
         </WrapRecord>
     )

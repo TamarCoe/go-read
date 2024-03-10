@@ -605,11 +605,17 @@
           },
           {"phoneme": "ק", "p_type": "letter", "t_status": "CORRECT"}
         ],
-        "error_type": {
-          "HESITATION": {
-            "partial": [1]
+        "error_type": [
+          {
+            "SELF-CORRECTION": {
+              "c_status": "failed",
+              "partial": [1]
+            }
+          },
+          {
+            "TRANSPOSITION": {"c_status": "letter"}
           }
-        }
+        ]
       },
       {
         "start_time": 47.479690,
@@ -652,12 +658,17 @@
           },
           {"phoneme": "ה", "p_type": "letter", "t_status": "CORRECT"}
         ],
-        "error_type": {
-          "SELF-CORRECTION": {
-            "c_status": "correct",
-            "partial": [1]
+        "error_type": [
+          {
+            "SELF-CORRECTION": {
+              "c_status": "correct",
+              "partial": [1]
+            }
+          },
+          {
+            "TRANSPOSITION": {"c_status": "letter"}
           }
-        }
+        ]
       },
       {
         "start_time": 49.569123,
@@ -727,7 +738,10 @@
           },
           {"phoneme": "י", "p_type": "letter", "t_status": "CORRECT"},
           {"phoneme": "ם", "p_type": "letter", "t_status": "SUBSTITUTION"}
-        ]
+        ],
+        "error_type": {
+          "ROOT_INFLECTION": {"c_status": "base word"}
+        }
       },
       {
         "start_time": 52.471773,
@@ -908,7 +922,10 @@
             ]
           },
           {"phoneme": "ת", "p_type": "letter", "t_status": "CORRECT"}
-        ]
+        ],
+        "error_type": {
+          "TRANSPOSITION": {"c_status": "vowel"}
+        }
       },
       {
         "start_time": 69.957417,
@@ -1012,6 +1029,11 @@
             ]
           },
           {"phoneme": "ם", "p_type": "letter", "t_status": "CORRECT"}
+        ],
+        "error_type": [
+          {
+            "TRANSPOSITION": {"c_status": "letter"}
+          }
         ]
       },
       {
