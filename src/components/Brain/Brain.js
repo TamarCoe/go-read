@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import Brain from 'assets/Brain.png'
+// import Brain from 'assets/Brain.png'
+import Brain from 'assets/school Profile.png'
 import { Context } from 'components/Main/Context'
 import { WrapImg, WrapBrain, Round, SubRound } from './Style'
 
@@ -46,7 +47,7 @@ const ShowBrain = () => {
             color: "#8db9c9",
             left: 7,
             top: -120,
-            titles: [{ label: "אוצר מילים" ,label:"ה. הנשמע"}]
+            titles: [{ label: "אוצר מילים", label: "ה. הנשמע" }]
         },
         {
             id: 1,
@@ -122,14 +123,14 @@ const ShowBrain = () => {
                 <img className='brain' src={Brain} />
             </WrapImg>
 
-            {items.map((item, index) =>
+            {/* {items.map((item, index) =>
                 <Round {...item}>
                     {subRounds.map((subRound, index) =>
                         <SubRound {...subRound} {...item?.titles?.[index]}>
                             {item?.titles?.[index]?.label}
                         </SubRound>
                     )}
-                </Round>)}
+                </Round>)} */}
 
         </WrapBrain>
     )

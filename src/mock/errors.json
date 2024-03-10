@@ -3,8 +3,7 @@
         "items": [
             {
                 "label": "חלקי דיבור מפוענחים",
-                "key": "xxx",
-                "disabled": true
+                "key": "phonemes_decoded"
             },
             {
                 "label": "מספר שינויים",
@@ -33,9 +32,8 @@
         "items": [
             {
                 "label": "סך נקודות זמן",
-                "key": "x1",
-                "color": "#00C2FF",
-                "disabled": true
+                "key": "total_time_intervals",
+                "color": "#00C2FF"
             },
             {
                 "label": "מספר שינויים",
@@ -44,14 +42,14 @@
                 "disabled": true
             },
             {
-                "label": "חריגות דיבור",
+                "label": "חריגות זמן דיבור",
                 "key": "x3",
                 "color": "#00DE16",
                 "disabled": true
             },
             {
                 "key": "x4",
-                "label": "חריגות שקט",
+                "label": "חריגות זמן שקט",
                 "color": "#FF5858",
                 "disabled": true
             }

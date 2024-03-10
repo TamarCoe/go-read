@@ -41,7 +41,7 @@ const App = () => {
                             autoCenter={false}
                             height={80}
                             waveColor={primary}
-                            url={localRecord ? record.recording_file : require('../../records/Mirabel 80 Words.mp3')}
+                            url={localRecord ? record.recording_file : require(`../../records/${record.filename}`)}
                             onReady={onReady}
                             onPlay={() => setIsPlaying(true)}
                             onPause={() => setIsPlaying(false)}

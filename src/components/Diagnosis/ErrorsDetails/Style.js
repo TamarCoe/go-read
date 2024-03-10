@@ -14,7 +14,7 @@ ${Scroll};
 }
 
 .wrapError{
-   width:200px;
+   width:220px;
 }
 
 .Flex-item + .Flex-item {

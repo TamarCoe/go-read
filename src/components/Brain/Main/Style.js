@@ -11,9 +11,9 @@ width:100%;
 background:${dark};
 overflow-y: auto;
 overflow-x: hidden;
-min-height: 350px;
-
+// height: calc(100% - 140px);
 ${Scroll};
+height: auto;
 `
 
 export { Wrap, Left, Right, WrapContent, WrapBrain }

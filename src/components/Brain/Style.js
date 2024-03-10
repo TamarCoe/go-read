@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { Scroll } from "styles/GlobalCss";
 import { dark } from "styles/theme";
 
 
 const WrapImg = styled.div`
-width:250px;
-height:250px;
+width:550px;
+height:550px;
 
 .brain{
     width:100%;
@@ -49,7 +50,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
-right: 340px;
+height: calc(100% - 140px);
+overflow:auto;
+${Scroll};
+// right: 340px;
 `
 
 export { WrapImg, WrapBrain, Round, SubRound }

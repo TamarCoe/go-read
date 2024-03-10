@@ -19,7 +19,7 @@ const ErrorsDetails = (props) => {
 
                 {items?.map((item) =>
                     <div className='wrapError'>
-                        <WrapError disabled align="start">
+                        <WrapError disabled notActive={item.disabled} align="start">
                             {item.label}
                             {"  "}
                             <Conut>

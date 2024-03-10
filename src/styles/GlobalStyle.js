@@ -12,6 +12,7 @@ overflow:hidden
 `
 
 const Card = styled(Button)`
+opacity:${props => props.notActive && '0.5'};
 border:1px solid #DDDDDD !important;
 border:${props => props.bold && '1px solid #000000 !important'};
 display: flex !important;
