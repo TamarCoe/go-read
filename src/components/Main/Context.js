@@ -32,7 +32,7 @@ const CreateContext = (props) => {
     }
 
     const filter = (recordsWords, type) => {
-        const errorType = errorTypes?.[indexTypeError]?.type
+        const errorType = types[indexType].menu[indexTypeError]?.type
 
         let words = cloneDeep(recordsWords)
 
@@ -58,6 +58,13 @@ const CreateContext = (props) => {
                 if (nWord.t_status === keysErrors.insertion === errorType) {
                     nWord.typeBold = true
                     nWord.errorTypeBold = true
+                }
+                if (nWord.error_type && nWord.error_type[keysErrors.rootInflection] && type === keysTypes.special) {
+                    nWord.typeBold = true;
+                }
+                if (nWord.error_type && nWord.error_type[keysErrors.rootInflection] && errorType === keysErrors.rootInflection) {
+                    nWord.errorTypeBold = true
+                    nWord.typeBold = true;
                 }
                 else nWord.phoneme_breakdown.forEach((phoneme) => {
                     if (phoneme.phoneme_duo)

@@ -4,7 +4,8 @@ const keys = {
     substitution: "SUBSTITUTION",
     selfCorrection: 'SELF-CORRECTION',
     transposition: 'TRANSPOSITION',
-    hesitation: 'HESITATION'
+    hesitation: 'HESITATION',
+    rootInflection: "ROOT_INFLECTION"
 }
 
 const errorTypes = [
@@ -69,21 +70,21 @@ const errorTypes2 = [
         id: 1,
         label: "שינוי תבנית",
         color: "#00C2FF",
-        // type: keys.insertion,
+        type: keys.rootInflection,
         bg: "#F4FCFF"
     },
     {
         id: 2,
         label: "שינוי הטיה",
         color: "#D100F3",
-        // type: keys.omission,
+        type: keys.rootInflection,
         bg: "#fae9fe"
     },
     {
         id: 3,
         label: "שינוי מוספיות",
         color: "#00DE16",
-        // type: keys.substitution,
+        type: keys.rootInflection,
         bg: "#f6fef7"
     }
 ]

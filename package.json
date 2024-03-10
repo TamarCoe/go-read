@@ -27,6 +27,7 @@
     "react-xarrows": "^2.0.2",
     "styled-components": "^6.1.8",
     "use-image": "^1.1.1",
+    "wavesurfer-react": "^3.0.2",
     "wavesurfer.js": "^7.7.4",
     "web-vitals": "^2.1.4"
   },
