@@ -2,7 +2,7 @@ import { React, useContext, useState } from 'react'
 import WavesurferPlayer from '@wavesurfer/react'
 import PauseIcon from '@mui/icons-material/Pause';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
-import { WrapRecord } from './Style'
+import { WrapRecord, WrapWavesurferPlayer } from './Style'
 import { IconButton, LinearProgress, CircularProgress } from '@mui/material'
 import { Context } from 'components/Main/Context';
 import { primary } from 'styles/theme';
@@ -30,10 +30,10 @@ const App = () => {
                     </IconButton>
                     <div id="record">
 
-                        <WavesurferPlayer
+                        <WrapWavesurferPlayer
                             id="record"
                             minPxPerSec={150}
-                            hideScrollbar={false}
+                            // hideScrollbar={false}
                             autoCenter={false}
                             height={80}
                             waveColor={primary}

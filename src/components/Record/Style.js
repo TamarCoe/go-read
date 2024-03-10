@@ -24,6 +24,16 @@ ${Scroll};
     transform: scaleX(-1);
     direction: ltr;
     ${Scroll};
+    overflow-x:hidden !important;
+    overflow-y:hidden !important;
+
+}
+
+.scroll{
+    overflow-x:hidden !important;
+    overflow-y:hidden !important;
+
+    ${Scroll};
 }
 
 .linearProgress{
@@ -35,8 +45,8 @@ height:40px;
 `
 
 const WrapWavesurferPlayer = styled(WavesurferPlayer)`
-width: calc(100% - 30px) !important;
-width: 100% !important;
+${Scroll};
+overflow:hidden;
 `
 
 export { WrapRecord, WrapWavesurferPlayer }
