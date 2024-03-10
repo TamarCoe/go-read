@@ -23,7 +23,6 @@ ${Scroll};
     width:calc(100% - 40px) !important;
     transform: scaleX(-1);
     direction: ltr;
-    overflow-x: auto;
     ${Scroll};
 }
 
