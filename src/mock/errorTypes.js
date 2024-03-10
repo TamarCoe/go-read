@@ -70,7 +70,7 @@ const errorTypes2 = [
         id: 1,
         label: "שינוי תבנית",
         color: "#00C2FF",
-        type: keys.rootInflection,
+        type: null,
         bg: "#F4FCFF"
     },
     {
@@ -84,7 +84,7 @@ const errorTypes2 = [
         id: 3,
         label: "שינוי מוספיות",
         color: "#00DE16",
-        type: keys.rootInflection,
+        type: null,
         bg: "#f6fef7"
     }
 ]
