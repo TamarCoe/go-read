@@ -19,8 +19,8 @@ const Main = () => {
                     <RecordsWords />
                 </RightSection>
                 <WrapLeft>
-                    {Object.keys(errors).map((errKey) =>
-                        <WrapErrors>
+                    {Object.keys(errors).map((errKey, index) =>
+                        <WrapErrors key={index}>
                             <ErrorsDetails title={errors[errKey].label} items={errors[errKey].items} />
                         </WrapErrors>
                     )}

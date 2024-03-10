@@ -17,7 +17,7 @@ const DetailedView = () => {
             {getByType().map((item, index) => {
                 const { bold, reference_word, transcription, typeBold, errorTypeBold, warningBold } = item
                 return (
-                    <div className='detailView'>
+                    <div key={index} className='detailView'>
                         <Card
                             disabled
                             key={index}

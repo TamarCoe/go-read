@@ -13,7 +13,7 @@ const ErrorTypes = () => {
             <Title>סוגי שגיאות</Title>
             <WrapErrors>
                 {types[indexType].menu.map((err, index) =>
-                    <ErrorType {...err} index={index} />
+                    <ErrorType key={index}{...err} index={index} />
                 )}
             </WrapErrors>
         </WrapErrorTypes>

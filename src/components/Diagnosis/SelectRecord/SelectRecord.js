@@ -51,8 +51,8 @@ const SelectRecord = () => {
                         <MenuItem disabled value="">
                             <em>בחירת הקלטה</em>
                         </MenuItem>
-                        {records.map((record) =>
-                            <MenuItem value={record}>{record.filename}</MenuItem>
+                        {records.map((record, index) =>
+                            <MenuItem key={index} value={record}>{record.filename}</MenuItem>
                         )}
                     </Select>
 

@@ -18,6 +18,7 @@ const Header = (props) => {
         <WrapHeader>
             {types.map((type, index) =>
                 <ButtonType
+                    key={index}
                     variant={indexType === index ? "contained" : "outlined"}
                     onClick={() => changeType(type, index)}
                     selected={indexType === index}

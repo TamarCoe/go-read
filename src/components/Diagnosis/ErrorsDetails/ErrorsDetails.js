@@ -17,8 +17,8 @@ const ErrorsDetails = (props) => {
 
             <WrapErrors className='Flex-item'>
 
-                {items?.map((item) =>
-                    <div className='wrapError'>
+                {items?.map((item, index) =>
+                    <div className='wrapError' key={index}>
                         <WrapError disabled notActive={item.disabled} align="start">
                             {item.label}
                             {"  "}
