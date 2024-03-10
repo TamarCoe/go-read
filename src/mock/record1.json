@@ -89,11 +89,23 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "תּ", "p_type": "letter", "t_status": "CORRECT"}    ,
-              {"phoneme": " ֶ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "תּ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֶ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "א", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "א",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -125,17 +137,37 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "שׁ", "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "שׁ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "תּ", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "תּ",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -203,17 +235,37 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "ט" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ט",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "נ", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "נ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "ק", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ק",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -299,28 +351,61 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "שׁ", "p_type": "letter", "t_status": "INSERTION"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "INSERTION"}
+              {
+                "phoneme": "שׁ",
+                "p_type": "letter",
+                "t_status": "INSERTION"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "INSERTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "שׂ", "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "שׂ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "מ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "מ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "תּ", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "תּ",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ],
         "error_type": {
           "SELF-CORRECTION": {
             "c_status": "correct",
-            "partial": [1]
+            "partial": [
+              1
+            ]
+          },
+          "HESITATION": {
+            "c_status": "correct"
           }
         }
       },
@@ -371,17 +456,37 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "פּ", "p_type": "letter", "t_status": "CORRECT"}    ,
-              {"phoneme": " ְ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "פּ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ס", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ס",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -422,40 +527,86 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "ח" , "p_type": "letter", "t_status": "INSERTION"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "INSERTION"}
+              {
+                "phoneme": "ח",
+                "p_type": "letter",
+                "t_status": "INSERTION"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "INSERTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "י" , "p_type": "letter", "t_status": "INSERTION"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "INSERTION"}
+              {
+                "phoneme": "י",
+                "p_type": "letter",
+                "t_status": "INSERTION"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "INSERTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ח" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ח",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "י" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "י",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ג" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ג",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ן", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ן",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ],
         "error_type": {
           "SELF-CORRECTION": {
             "c_status": "correct",
-            "partial": [1]
+            "partial": [
+              1
+            ]
           }
         }
       },
@@ -470,17 +621,37 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "א" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ֹ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "א",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֹ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ֶ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֶ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ך", "p_type": "letter", "t_status": "SUBSTITUTION"}
+          {
+            "phoneme": "ך",
+            "p_type": "letter",
+            "t_status": "SUBSTITUTION"
+          }
         ]
       },
       {
@@ -503,18 +674,42 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "בּ", "p_type": "letter", "t_status": "CORRECT"}    ,
-              {"phoneme": " ֵ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "בּ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֵ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "י", "p_type": "letter", "t_status": "INSERTION"},
+          {
+            "phoneme": "י",
+            "p_type": "letter",
+            "t_status": "INSERTION"
+          },
           {
             "phoneme_duo": [
-              {"phoneme": "צ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ָ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "צ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ָ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ה", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ה",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -573,47 +768,79 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "מ" , "t_status": "INSERTION", "p_type": "letter"},
-              {"phoneme": " ְ", "t_status": "INSERTION", "p_type": "vowel" }
-            ]
-          },
-          {
-            "phoneme_duo": [
-              {"phoneme": "מ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ִ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "מ",
+                "t_status": "INSERTION",
+                "p_type": "letter"
+              },
+              {
+                "phoneme": " ְ",
+                "t_status": "INSERTION",
+                "p_type": "vowel"
+              }
             ]
           },
           {
             "phoneme_duo": [
               {
-                "phoneme" : "דּ"          ,
-                "t_status": "SUBSTITUTION",
-                "p_type"  : "letter"
+                "phoneme": "מ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
               },
-              {"phoneme": " ְ", "t_status": "CORRECT", "p_type": "vowel"}
+              {
+                "phoneme": " ִ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
               {
-                "phoneme" : "בּ"          ,
+                "phoneme": "דּ",
                 "t_status": "SUBSTITUTION",
-                "p_type"  : "letter"
+                "p_type": "letter"
               },
-              {"phoneme": " ֶ", "t_status": "SUBSTITUTION", "p_type": "vowel"}
+              {
+                "phoneme": " ְ",
+                "t_status": "CORRECT",
+                "p_type": "vowel"
+              }
             ]
           },
-          {"phoneme": "ק", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme_duo": [
+              {
+                "phoneme": "בּ",
+                "t_status": "SUBSTITUTION",
+                "p_type": "letter"
+              },
+              {
+                "phoneme": " ֶ",
+                "t_status": "SUBSTITUTION",
+                "p_type": "vowel"
+              }
+            ]
+          },
+          {
+            "phoneme": "ק",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ],
         "error_type": [
           {
             "SELF-CORRECTION": {
               "c_status": "failed",
-              "partial": [1]
+              "partial": [
+                1
+              ]
             }
           },
           {
-            "TRANSPOSITION": {"c_status": "letter"}
+            "TRANSPOSITION": {
+              "c_status": "letter"
+            }
           }
         ]
       },
@@ -628,45 +855,93 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "ת" , "t_status": "INSERTION", "p_type": "letter"},
-              {"phoneme": " ִ", "t_status": "INSERTION", "p_type": "vowel" }
+              {
+                "phoneme": "ת",
+                "t_status": "INSERTION",
+                "p_type": "letter"
+              },
+              {
+                "phoneme": " ִ",
+                "t_status": "INSERTION",
+                "p_type": "vowel"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר" , "t_status": "INSERTION", "p_type": "letter"},
-              {"phoneme": " ְ", "t_status": "INSERTION", "p_type": "vowel" }
+              {
+                "phoneme": "ר",
+                "t_status": "INSERTION",
+                "p_type": "letter"
+              },
+              {
+                "phoneme": " ְ",
+                "t_status": "INSERTION",
+                "p_type": "vowel"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "תּ", "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ִ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "תּ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ִ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ק" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ק",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ָ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ָ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ה", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ה",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ],
         "error_type": [
           {
             "SELF-CORRECTION": {
               "c_status": "correct",
-              "partial": [1]
+              "partial": [
+                1
+              ]
             }
           },
           {
-            "TRANSPOSITION": {"c_status": "letter"}
+            "TRANSPOSITION": {
+              "c_status": "letter"
+            }
           }
         ]
       },
@@ -681,23 +956,51 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"t_status": "CORRECT", "phoneme": "ה", "p_type": "letter"}     ,
-              {"phoneme": " ֶ", "t_status": "SUBSTITUTION", "p_type": "vowel"}
+              {
+                "t_status": "CORRECT",
+                "phoneme": "ה",
+                "p_type": "letter"
+              },
+              {
+                "phoneme": " ֶ",
+                "t_status": "SUBSTITUTION",
+                "p_type": "vowel"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ל" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ל",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "בּ", "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "בּ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "שׁ", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "שׁ",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -720,27 +1023,61 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "ס" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ס",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "פ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ָ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "פ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ָ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ִ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ִ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "י", "p_type": "letter", "t_status": "CORRECT"},
-          {"phoneme": "ם", "p_type": "letter", "t_status": "SUBSTITUTION"}
+          {
+            "phoneme": "י",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          },
+          {
+            "phoneme": "ם",
+            "p_type": "letter",
+            "t_status": "SUBSTITUTION"
+          }
         ],
         "error_type": {
-          "ROOT_INFLECTION": {"c_status": "base word"}
+          "ROOT_INFLECTION": {
+            "c_status": "base word"
+          }
         }
       },
       {
@@ -763,23 +1100,51 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "צ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ֹ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "צ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֹ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "א" , "p_type": "letter", "t_status": "CORRECT"  },
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "INSERTION"}
+              {
+                "phoneme": "א",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "INSERTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "נ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ִ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "נ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ִ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "י", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "י",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -820,23 +1185,51 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "י" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "י",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "מ", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ֶ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "מ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֶ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "מ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ָ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "מ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ָ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ה", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ה",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -904,27 +1297,61 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "ג", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "ג",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ב", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ְ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "ב",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "ע", "p_type": "letter", "t_status": "CORRECT"},
+          {
+            "phoneme": "ע",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          },
           {
             "phoneme_duo": [
-              {"phoneme": "ו" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ֹ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ו",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֹ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ת", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ת",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ],
         "error_type": {
-          "TRANSPOSITION": {"c_status": "vowel"}
+          "TRANSPOSITION": {
+            "c_status": "vowel"
+          }
         }
       },
       {
@@ -947,24 +1374,56 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "פּ", "p_type": "letter", "t_status": "CORRECT"}    ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "פּ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ס", "p_type": "letter", "t_status": "CORRECT"},
+          {
+            "phoneme": "ס",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          },
           {
             "phoneme_duo": [
-              {"phoneme": "ו" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ּ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ו",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ּ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ס", "p_type": "letter", "t_status": "SUBSTITUTION"}
+          {
+            "phoneme": "ס",
+            "p_type": "letter",
+            "t_status": "SUBSTITUTION"
+          }
         ]
       },
       {
@@ -1005,34 +1464,76 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "מ" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ַ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "מ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר", "p_type": "letter", "t_status": "SUBSTITUTION"},
-              {"phoneme": " ְ", "p_type": "vowel", "t_status": "CORRECT"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "SUBSTITUTION"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "פ", "p_type": "letter", "t_status": "SUBSTITUTION"},
-              {"phoneme": " ִ", "p_type": "vowel", "t_status": "CORRECT"}
+              {
+                "phoneme": "פ",
+                "p_type": "letter",
+                "t_status": "SUBSTITUTION"
+              },
+              {
+                "phoneme": " ִ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"t_status": "OMISSION"},
+          {
+            "phoneme": "ע",
+            "p_type": "letter",
+            "t_status": "OMISSION"
+          },
           {
             "phoneme_duo": [
-              {"phoneme": "י" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "י",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ם", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ם",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ],
         "error_type": [
           {
-            "TRANSPOSITION": {"c_status": "letter"}
+            "TRANSPOSITION": {
+              "c_status": "letter"
+            }
           }
         ]
       },
@@ -1056,24 +1557,56 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "מ", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "מ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ד", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "ד",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "ר", "p_type": "letter", "t_status": "CORRECT"},
+          {
+            "phoneme": "ר",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          },
           {
             "phoneme_duo": [
-              {"phoneme": "ו" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ֹ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ו",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֹ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ן", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ן",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -1087,27 +1620,63 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "י" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ִ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "י",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ִ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ל" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ל",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "בּ", "p_type": "letter", "t_status": "CORRECT"}    ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "בּ",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "ש", "p_type": "letter", "t_status": "CORRECT"},
+          {
+            "phoneme": "ש",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          },
           {
             "phoneme_duo": [
-              {"phoneme": "ו" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ּ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ו",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ּ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           }
         ]
@@ -1141,23 +1710,51 @@
         "phoneme_breakdown": [
           {
             "phoneme_duo": [
-              {"phoneme": "ה", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ַ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "ה",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ַ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ש" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ְ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ש",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ְ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ו" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ָ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ו",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ָ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
-          {"phoneme": "ה", "p_type": "letter", "t_status": "CORRECT"}
+          {
+            "phoneme": "ה",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          }
         ]
       },
       {
@@ -1169,21 +1766,47 @@
         "reference_word": "קוֹרֵעַ",
         "t_status": "INCORRECT",
         "phoneme_breakdown": [
-          {"phoneme": "ק", "p_type": "letter", "t_status": "CORRECT"},
+          {
+            "phoneme": "ק",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          },
           {
             "phoneme_duo": [
-              {"phoneme": "ו" , "p_type": "letter", "t_status": "CORRECT"},
-              {"phoneme": " ֹ", "p_type": "vowel" , "t_status": "CORRECT"}
+              {
+                "phoneme": "ו",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֹ",
+                "p_type": "vowel",
+                "t_status": "CORRECT"
+              }
             ]
           },
           {
             "phoneme_duo": [
-              {"phoneme": "ר", "p_type": "letter", "t_status": "CORRECT"}     ,
-              {"phoneme": " ֵ", "p_type": "vowel", "t_status": "SUBSTITUTION"}
+              {
+                "phoneme": "ר",
+                "p_type": "letter",
+                "t_status": "CORRECT"
+              },
+              {
+                "phoneme": " ֵ",
+                "p_type": "vowel",
+                "t_status": "SUBSTITUTION"
+              }
             ]
           },
-          {"phoneme": "ע", "p_type": "letter", "t_status": "CORRECT"},
-          {"t_status": "OMISSION"}
+          {
+            "phoneme": "ע",
+            "p_type": "letter",
+            "t_status": "CORRECT"
+          },
+          {
+            "t_status": "OMISSION"
+          }
         ]
       },
       {

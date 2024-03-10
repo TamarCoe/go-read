@@ -3,7 +3,8 @@ const keys = {
     omission: "OMISSION",
     substitution: "SUBSTITUTION",
     selfCorrection: 'SELF-CORRECTION',
-    transposition: 'TRANSPOSITION'
+    transposition: 'TRANSPOSITION',
+    hesitation: 'HESITATION'
 }
 
 const errorTypes = [
@@ -19,7 +20,7 @@ const errorTypes = [
         label: "השמטה",
         color: "#D100F3",
         type: keys.omission,
-        bg: "#fffaf6"
+        bg: "#fae9fe"
     },
     {
         id: 3,
@@ -38,16 +39,16 @@ const errorTypes = [
     {
         id: 5,
         label: "היסוס חזרה",
-        color: "#FF5858",
-        type: "repitition",
-        disabled: true
+        color: "#BC4F00",
+        type: keys.hesitation,
+        bg:"#f8ede7"
     },
     {
         id: 6,
         label: "סיכול",
         color: "#0047FF",
         type: keys.transposition,
-        bg:'#cfdbff'
+        bg: '#f1f4ff'
     },
     // {
     //     id: 7,

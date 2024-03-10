@@ -51,6 +51,10 @@ const CreateContext = (props) => {
                     nWord.typeBold = true
                     nWord.errorTypeBold = true
                 }
+                if (nWord.error_type && nWord.error_type[keysErrors.hesitation] && errorType === keysErrors.hesitation) {
+                    nWord.typeBold = true
+                    nWord.errorTypeBold = true
+                }
                 if (nWord.t_status === keysErrors.insertion === errorType) {
                     nWord.typeBold = true
                     nWord.errorTypeBold = true
