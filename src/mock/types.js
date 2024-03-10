@@ -1,36 +1,43 @@
+import errorTypes, { errorTypes2 } from "./errorTypes"
+
 const keys = {
     all: "all",
     phoneme: "letter",
     vowel: "vowel",
-    word: "word"
+    word: "word",
+    special: "special"
 }
 
 const types = [
     {
         id: 0,
         label: "כללי",
-        type: keys.all
+        type: keys.all,
+        menu: errorTypes
     },
     {
         id: 1,
         label: "אות",
-        type: keys.phoneme
+        type: keys.phoneme,
+        menu: errorTypes
     },
     {
         id: 2,
         label: "ניקוד",
-        type: keys.vowel
+        type: keys.vowel,
+        menu: errorTypes
     },
     {
         id: 3,
         label: "מילה",
-        type: "word"
+        type: "word",
+        menu: errorTypes
     },
     {
         id: 4,
         label: "שינוי מבנה",
-        type: "xxx",
-        disabled: true
+        type: keys.special,
+        menu: errorTypes2
     },
     {
         id: 5,

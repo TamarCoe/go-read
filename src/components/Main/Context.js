@@ -94,6 +94,8 @@ const CreateContext = (props) => {
                 return filter(recordsWords, keysTypes.vowel)
             case keysTypes.word:
                 return filter(recordsWords, keysTypes.word)
+            case keysTypes.special:
+                return filter(recordsWords, keysTypes.special)
         }
         return recordsWords
     }

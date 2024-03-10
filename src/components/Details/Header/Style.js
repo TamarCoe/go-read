@@ -8,7 +8,7 @@ border-radius: 8px;
 display: flex;
 flex-direction: row;
 column-gap: 10px;
-padding-bottom: 20px;
+padding-bottom: 10px;
 padding-top:0
 `
 

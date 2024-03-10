@@ -41,7 +41,7 @@ const errorTypes = [
         label: "היסוס חזרה",
         color: "#BC4F00",
         type: keys.hesitation,
-        bg:"#f8ede7"
+        bg: "#f8ede7"
     },
     {
         id: 6,
@@ -64,6 +64,30 @@ const errorTypes = [
     // }
 ]
 
+const errorTypes2 = [
+    {
+        id: 1,
+        label: "שינוי תבנית",
+        color: "#00C2FF",
+        // type: keys.insertion,
+        bg: "#F4FCFF"
+    },
+    {
+        id: 2,
+        label: "שינוי הטיה",
+        color: "#D100F3",
+        // type: keys.omission,
+        bg: "#fae9fe"
+    },
+    {
+        id: 3,
+        label: "שינוי מוספיות",
+        color: "#00DE16",
+        // type: keys.substitution,
+        bg: "#f6fef7"
+    }
+]
+
 export default errorTypes
 
-export { keys as keysErrors }
+export { keys as keysErrors, errorTypes2 }
