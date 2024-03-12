@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 body {
   height: 100%;
   width: 100%;
@@ -8,7 +10,7 @@ body {
   overflow: hidden;
   color: #26445A;
   font-size: 17px;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins !important";
 }
 
 .App {

@@ -18,6 +18,11 @@ const header = [
         id: 3,
         label: "אינדיקציה",
         route: "/brain"
+    },
+    {
+        id: 4,
+        label: "תעתוקים פעילים",
+        route: "/transliteration"
     }
 ]
 

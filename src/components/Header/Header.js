@@ -22,7 +22,7 @@ const Header = (props) => {
                     return (
                         <ButtonType
                             variant={indexMenuItem === index ? "contained" : "outlined"}
-                            key={item.key}
+                            key={item.id}
                             onClick={() => !disabled && onClickItem(item, index)}
                             selected={indexMenuItem === index}
                             disabled={disabled || (index != 0 && !record?.results?.text_score)}

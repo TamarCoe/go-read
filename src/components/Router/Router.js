@@ -6,6 +6,7 @@ import {
 import Details from 'components/Details/Main'
 import Diagnosis from "components/Diagnosis/Main";
 import Brain from 'components/Brain/Main'
+import Deciphering from 'components/Deciphering/Main'
 import Query from "components/Query";
 import { useNavigate } from 'react-router-dom';
 import { createBrowserHistory } from "history";
@@ -26,6 +27,7 @@ const CreateRouter = () => {
                     <Route path="/details" element={<Details />} />
                     <Route path="/brain" element={<Brain />} />
                     <Route path="/query" element={<Query />} />
+                    <Route path="/transliteration" element={<Deciphering />} />
                 </>
             }
 
