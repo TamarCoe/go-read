@@ -1,6 +1,7 @@
 
 
 const hebrewCharacters = {
+    
     1: {
         id: 1,
         label: "קמץ",
