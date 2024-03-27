@@ -7,12 +7,29 @@ import { WrapContent } from './Style'
 import Record from 'components/Record'
 import { sequence } from 'hebrew-transliteration'
 import { Crud } from './hooks'
+import { Buffer } from "buffer"
+import axios from 'axios'
 
 const Main = () => {
     const { init } = Crud()
 
+    const encoded = Buffer.from(process.env.REACT_APP_USERNAME + ':' + process.env.REACT_APP_PASSWORD).toString('base64');
+
+    const axioxSetting = async () => {
+        await axios.interceptors.request.use((config) => {
+            config.headers.Authorization = 'Basic ' + encoded
+            return config;
+        }, (error) => {
+            return Promise.reject(error);
+        });
+    }
+
     useEffect(() => {
-        init()
+        const initData = async () => {
+            axioxSetting()
+            init()
+        }
+        initData()
     }, [])
 
     return (

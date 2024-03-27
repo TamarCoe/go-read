@@ -22,16 +22,16 @@ import store from './redux/store';
 function App() {
 
   const history = createBrowserHistory({ window });
-  const encoded = Buffer.from(process.env.REACT_APP_USERNAME + ':' + process.env.REACT_APP_PASSWORD).toString('base64');
+  // const encoded = Buffer.from(process.env.REACT_APP_USERNAME + ':' + process.env.REACT_APP_PASSWORD).toString('base64');
 
-  useEffect(() => {
-    axios.interceptors.request.use((config) => {
-      config.headers.Authorization = 'Basic ' + encoded
-      return config;
-    }, (error) => {
-      return Promise.reject(error);
-    });
-  }, [])
+  // useEffect(() => {
+  //   axios.interceptors.request.use((config) => {
+  //     config.headers.Authorization = 'Basic ' + encoded
+  //     return config;
+  //   }, (error) => {
+  //     return Promise.reject(error);
+  //   });
+  // }, [])
 
   return (
     <Provider store={store}>
