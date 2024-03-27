@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ErrorTypes from 'components/Details/ErrorTypes'
 import DetailedView from 'components/Details/DetailedView'
 import Header from 'components/Details/Header'

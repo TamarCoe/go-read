@@ -1,14 +1,15 @@
 import axios from "axios"
 import get_results from 'mock/get_results.json'
 
-const getWords = (id) => {
-    return axios.get(`${process.env.REACT_APP_SERVER_PORT}reading_assessment/${id}/get_reading_assessment_results`)
+const getWords = (id =3) => {
+    return axios.get(`${process.env.REACT_APP_SERVER_PORT}assessment/${3}/get_results/`)
         .then(response => {
-            return get_results
-            // return response.data
+            // return get_results
+            return response.data
         })
         .catch(error => {
-            return get_results
+            return null
+            // return get_results
         });
 }
 

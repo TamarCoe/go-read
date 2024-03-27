@@ -8,9 +8,10 @@ const initialState = {
 
     words: null,
     word: {
-        errors: [null,null]
+        errors: [null, null]
     },
-    phonemes: null
+    phonemes: null,
+    changeWord: false
 }
 
 const config = {
@@ -31,6 +32,9 @@ const config = {
     },
     setPhonemes(state, action) {
         state.phonemes = action.payload
+    },
+    setChangeWord(state, action) {
+        state.changeWord = action.payload
     },
 }
 

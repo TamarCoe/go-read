@@ -11,7 +11,7 @@ const letterCharacters = {
                 let nPhonemeSave = { ...phoneme }
                 phoneme.letter_status = vowel.status
                 phoneme.phoneme_def = staticPhoneme.id
-                phoneme.phoneme_def_letter = phoneme.phoneme_def_letter || phoneme.phoneme
+                phoneme.phoneme_def_letter = phoneme.phoneme_def_letter || phoneme.letter
                 return nPhonemeSave
             }
         }
@@ -33,7 +33,7 @@ const letterCharacters = {
                     nPhonemeSave.letter_status = keysSourceChanges.omission
                     nPhonemeSave.vowel_status = keysSourceChanges.omission
                     nPhonemeSave.phoneme_def = staticPhoneme.id
-                    phoneme.phoneme_def_letter = phoneme.phoneme_def_letter || phoneme.phoneme
+                    phoneme.phoneme_def_letter = phoneme.phoneme_def_letter || phoneme.letter
                     phoneme.phoneme_def_letter_add_on = phoneme.phoneme_def_letter_add_on || phoneme.letter_and_on
                     phoneme.phoneme_def_vowel_code = phoneme.phoneme_def_vowel_code || phoneme.vowel_code
                 }

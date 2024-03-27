@@ -6,7 +6,7 @@ import {
 import Details from 'components/Details/Main'
 import Diagnosis from "components/Diagnosis/Main";
 import Brain from 'components/Brain/Main'
-import Deciphering from 'components/Deciphering/Main/Context'
+import Deciphering from 'components/Deciphering/Main'
 import Query from "components/Query";
 import { useNavigate } from 'react-router-dom';
 import { createBrowserHistory } from "history";

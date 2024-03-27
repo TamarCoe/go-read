@@ -23,9 +23,6 @@ function App() {
 
   const history = createBrowserHistory({ window });
   const encoded = Buffer.from(process.env.REACT_APP_USERNAME + ':' + process.env.REACT_APP_PASSWORD).toString('base64');
-  // const headers = {
-  //     'Authorization': 'Basic ' + encoded
-  // }
 
   useEffect(() => {
     axios.interceptors.request.use((config) => {

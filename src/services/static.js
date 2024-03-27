@@ -14,7 +14,7 @@ const convertArray = (array) => {
 }
 
 const getVowelCode = () => {
-    return axios.get(`${process.env.REACT_APP_SERVER_PORT}vowel_codes`)
+    return axios.get(`${process.env.REACT_APP_SERVER_PORT}vowel_codes/`)
         .then(response => {
             return convertArray(response.data);
             // return hebrewCharacters
@@ -25,7 +25,7 @@ const getVowelCode = () => {
 }
 
 const getLetterAddOn = async () => {
-    return axios.get(`${process.env.REACT_APP_SERVER_PORT}letter_add_ons`)
+    return axios.get(`${process.env.REACT_APP_SERVER_PORT}letter_add_ons/`)
         .then(response => {
             return convertArray(response.data);
             // return otherCharacters
@@ -35,9 +35,9 @@ const getLetterAddOn = async () => {
         });
 }
 
-const getStatisWords = (id) => {
+const getStatisWords = (id = 3) => {
     // return words
-    return axios.get(`${process.env.REACT_APP_SERVER_PORT}assessment/${id}/get_definitions`)
+    return axios.get(`${process.env.REACT_APP_SERVER_PORT}assessment/${3}/get_definitions/`)
         .then(response => {
             // return words
             return response.data

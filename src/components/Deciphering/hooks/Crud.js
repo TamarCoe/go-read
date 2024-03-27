@@ -1,11 +1,9 @@
-import { useContext } from 'react'
-import { Context } from '../Main/Context'
+import actions from '../../../redux/actions'
 import { v4 as uuid } from 'uuid'
 import { keys } from "mock/types";
 import { keysSourceChanges } from 'mock/sourceChanges';
 import { addItem } from 'utils/array';
 import { useDispatch, useSelector } from 'react-redux';
-import actions from '../../../redux/actions'
 
 const Crud = () => {
     const dispatch = useDispatch()
@@ -38,7 +36,7 @@ const Crud = () => {
 
         //for insertion phonemes
         if (phoneme.vowel_status === keysSourceChanges.insertion) {
-            if (!phoneme.phoneme)
+            if (!phoneme.letter)
                 nItem.disabled = true
             else if (strKeyVowel === phoneme?.vowel_code?.toString()) {
                 nItem.insertionError = true
@@ -65,7 +63,7 @@ const Crud = () => {
 
         //for insertion phonemes
         if (phoneme.letter_status === keysSourceChanges.insertion) {
-            if (!phoneme.phoneme)
+            if (!phoneme.letter)
                 nItem.disabled = true
             if (strKeyVowel === phoneme?.letter_add_on?.toString()) {
                 nItem.insertionError = true
@@ -96,7 +94,7 @@ const Crud = () => {
         else if (phoneme?.letter_status === nItem?.status)
             if (phoneme.phoneme_def_letter ?
                 //for substitution 
-                phoneme.phoneme_def_letter != phoneme.phoneme && phoneme.phoneme_def_letter
+                phoneme.phoneme_def_letter != phoneme.letter && phoneme.phoneme_def_letter
                 //for ommison
                 : phoneme?.vowel_status === nItem?.status
             )
@@ -104,7 +102,6 @@ const Crud = () => {
 
         return nItem
     }
-
 
     const getClarity = ({ keyVowel, items, phoneme, index }) => {
         let nItem = { ...items[keyVowel] }//get the object of char

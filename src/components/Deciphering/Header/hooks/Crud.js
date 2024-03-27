@@ -1,19 +1,19 @@
-import { useContext } from "react"
-import { saveWord } from 'services/word';
-import { Context } from "components/Deciphering/Main/Context"
-import WordRM from 'models/RM/Word';
-import { useDispatch, useSelector } from "react-redux";
 import actions from '../../../../redux/actions'
+import WordRM from 'models/RM/Word';
+import { saveWord } from 'services/word';
+import { useDispatch, useSelector } from "react-redux";
+import { SelectRecordCrud } from 'components/Diagnosis/SelectRecord/hooks';
 
 const Crud = () => {
     const dispatch = useDispatch()
-    const { vowelCode, letterAddOn } = useContext(Context)
-    const { words, phonemes, word, staticWords, wordIndex, staticWord } = useSelector(state => state.words)
+    const { vowelCode, letterAddOn } = useSelector(state => state.static)
+    const { words, phonemes, word, staticWords, wordIndex, staticWord, changeWord } = useSelector(state => state.words)
+    const { fillData } = SelectRecordCrud()
 
     const changeWordIndex = (value) => {
         dispatch(actions.setWordIndex(value))
         dispatch(actions.setStaticWord(staticWords.word_defs[value]))
-        if (words?.words[wordIndex]?.phonemes)
+        if (words?.words[value]?.phonemes)
             dispatch(actions.setPhonemes(words.words[value].phonemes))
         else
             dispatch(actions.setPhonemes(staticWords.word_defs[value].phoneme_defs))
@@ -28,12 +28,14 @@ const Crud = () => {
     }
 
     const saveData = async () => {
-        let saveWordsData = new WordRM({ ...staticWord, ...word }, phonemes,vowelCode,letterAddOn)
-        console.log(saveWordsData)
-        // const res = await saveWord(saveWordsData)
-        // if (res)
-        if (wordIndex != staticWords.length - 1)
-            nextWord()
+        let saveWordsData = new WordRM({ ...staticWord, ...word }, phonemes, vowelCode, letterAddOn)
+        const res = await saveWord(1, saveWordsData)
+        if (res) {
+            fillData()
+            if (wordIndex != staticWords.length - 1)
+                nextWord()
+        }
+
 
         return
     }

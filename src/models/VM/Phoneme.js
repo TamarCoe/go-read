@@ -16,9 +16,9 @@ class Phoneme {
         this.vowel_code = vowel_code;
         this.letter_add_on = letter_add_on;
 
-        this.phoneme_def_letter = phoneme_def_letter;
-        this.phoneme_def_letter_add_on = phoneme_def_letter_add_on;
-        this.phoneme_def_vowel_code = phoneme_def_vowel_code;
+        // this.phoneme_def_letter = phoneme_def_letter;
+        // this.phoneme_def_letter_add_on = phoneme_def_letter_add_on;
+        // this.phoneme_def_vowel_code = phoneme_def_vowel_code;
     }
 }
 

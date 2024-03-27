@@ -3,14 +3,13 @@ import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { WrapHeader, StyleIconButton } from './Style'
 import { Button, CircularProgress } from '@mui/material'
-import { Context } from '../Main/Context';
 import { Context as GeneralContext } from 'components/Main/Context'
 import { PauseOutlined } from '@mui/icons-material';
 import { Crud as MainCrud } from 'components/Deciphering/Header/hooks'
 import { useSelector } from 'react-redux';
 
 const Header = () => {
-    const { vowelCode, letterAddOn, errorKey } = useContext(Context)
+    const { vowelCode, letterAddOn } = useSelector(state => state.static)
     const { phonemes, staticWords, staticWord, wordIndex } = useSelector(state => state.words)
     const { onPlayPause, isPlaying } = useContext(GeneralContext)
     const [loading, setLoading] = useState(false)
@@ -47,7 +46,7 @@ const Header = () => {
                         {phonemes?.map((phoneme, index) =>
                             <div className='wrap-letter' key={phoneme.id}>
                                 <div class='letter'>
-                                    {phoneme.phoneme || phoneme.newPhoneme}
+                                    {phoneme.letter}
                                     <span bold={phoneme.edited} className='vowelCode' dangerouslySetInnerHTML={{ __html: vowelCode?.[phoneme.vowel_code]?.html_code }} />
                                     <span dangerouslySetInnerHTML={{ __html: letterAddOn?.[phoneme.letter_add_on]?.html_code }} />
                                 </div>

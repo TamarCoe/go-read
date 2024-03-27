@@ -1,9 +1,16 @@
 import axios from "axios"
+import get_results from 'mock/get_results'
 
-const saveWord = (word) => {
-    return axios.post(`${process.env.REACT_APP_SERVER_PORT}reading_assessment/1/seve_word/`, {
-        data: word
-    }).then((res) => res)
+const saveWord = (id =3, word) => {
+    return axios.post(`${process.env.REACT_APP_SERVER_PORT}assessment/${3}/save_word/`, {
+        ...word
+    })
+        .then(response => {
+            return response.data
+        })
+        .catch(error => {
+            return null
+        });
 }
 
 export { saveWord }
