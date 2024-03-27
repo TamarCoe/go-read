@@ -14,7 +14,6 @@ align-items:center;
 #play{
     width:40px !important;
     height:40px !important;
-    transform: scaleX(-1) !important;
 }
 ${Scroll};
 

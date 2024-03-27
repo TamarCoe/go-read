@@ -1,8 +1,7 @@
 import React, { useContext } from 'react'
 import ErrorType from 'components/Details/ErrorType'
-import errorTypes from 'mock/errorTypes'
-import { WrapErrorTypes, WrapErrorType, WrapErrors, Title } from './Style'
 import types from 'mock/types'
+import { WrapErrorTypes, WrapErrorType, WrapErrors, Title } from './Style'
 import { Context } from 'components/Main/Context'
 
 const ErrorTypes = () => {

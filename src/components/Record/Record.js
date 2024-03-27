@@ -7,19 +7,8 @@ import { IconButton, LinearProgress, CircularProgress } from '@mui/material'
 import { Context } from 'components/Main/Context';
 import { primary } from 'styles/theme';
 
-const App = () => {
-    const [wavesurfer, setWavesurfer] = useState(null)
-    const [isPlaying, setIsPlaying] = useState(false)
-    const { record, localRecord } = useContext(Context)
-
-    const onReady = (ws) => {
-        setWavesurfer(ws)
-        setIsPlaying(false)
-    }
-
-    const onPlayPause = () => {
-        wavesurfer && wavesurfer.playPause()
-    }
+const Record = () => {
+    const { isPlaying, setIsPlaying, onPlayPause, onReadyPlay, wavesurfer, record, localRecord } = useContext(Context)
 
     return (
         <WrapRecord>
@@ -38,7 +27,7 @@ const App = () => {
                             height={80}
                             waveColor={primary}
                             url={localRecord ? record.recording_file : require(`../../records/${record.filename}`)}
-                            onReady={onReady}
+                            onReady={onReadyPlay}
                             onPlay={() => setIsPlaying(true)}
                             onPause={() => setIsPlaying(false)}
                         />
@@ -51,4 +40,4 @@ const App = () => {
     )
 }
 
-export default App
+export default Record

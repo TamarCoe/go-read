@@ -1,30 +1,9 @@
-{
-    "if_done": [
-        {
-            "label": "החלפה"
-        },
-        {
-            "label": "הוספה"
-        },
-        {
-            "label": "השמטה"
-        },
-        {
-            "label": "היסוס"
-        },
-        {
-            "label": "חזרה"
-        },
-        {
-            "label": "תיקון עצמי"
-        },
-        {
-            "label": "עצירה"
-        },
-        {
-            "label": "סיכול"
-        }
-    ],
+import { map } from 'lodash'
+import sourceChanges from './sourceChanges'
+import meetsCriterion from './meetsCriterion'
+
+const query = {
+    "if_done": map(sourceChanges),
     "from_speech_unit": [
         {
             "label": "הכל"
@@ -71,59 +50,7 @@
             "label": "משפט"
         }
     ],
-    "meets_the_criteria": [
-        {
-            "label": "דומה חזותית"
-        },
-        {
-            "label": "דומה שמיעתית"
-        },
-        {
-            "label": "מילה נרדפת"
-        },
-        {
-            "label": "מאותה קטגורייה"
-        },
-        {
-            "label": "חסר משמעות"
-        },
-        {
-            "label": "בעלת משמעות"
-        },
-        {
-            "label": "שינוי תבנית - בנין"
-        },
-        {
-            "label": "שינוי תבנית - משקל"
-        },
-        {
-            "label": "שינוי הטיה - גוף"
-        },
-        {
-            "label": "שינוי הטיה - מין"
-        },
-        {
-            "label": "שינוי הטיה - מספר"
-        },
-        {
-            "label": "שינוי הטיה - זמן"
-        },
-        {
-            "label": "שינוי הטיה - שייכות"
-        },
-        {
-            "label": "שינוי מוספיות"
-        },
-        {
-            "label": "עקבי - מקור"
-        },
-        {
-            "label": "עקבי - התקבל"
-        },
-        {
-            "label": "עקבי מקור והתקבל"
-        }
-    ],
+    "meets_the_criteria": map(meetsCriterion),
     "according_to_sensitivity": [
         {
             "label": "גאוס (התפלגות נורמלית) מצטבר"
@@ -189,3 +116,5 @@
         }
     ]
 }
+
+export default query

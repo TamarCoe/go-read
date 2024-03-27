@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import errorTypes from 'mock/errorTypes'
 import types from 'mock/types'
 import Main from './Main'
-import { cloneDeep } from 'lodash'
+import { cloneDeep, keyBy } from 'lodash'
 import { keysTypes } from 'mock/types'
 import { keysErrors } from 'mock/errorTypes'
+import { useSelector } from 'react-redux'
 
 const CreateContext = (props) => {
     const [indexTypeError, setIndexTypeError] = useState(null)
@@ -12,6 +13,19 @@ const CreateContext = (props) => {
     const [record, setRecord] = useState(0)
     const [indexMenuItem, setIndexMenuItem] = useState(0)
     const [localRecord, setLocalRecord] = useState(null)
+    const [wavesurfer, setWavesurfer] = useState(null)
+    const [isPlaying, setIsPlaying] = useState(false)
+
+    const { words } = useSelector(state => state.words)
+
+    const onPlayPause = () => {
+        wavesurfer && wavesurfer.playPause()
+    }
+
+    const onReadyPlay = (ws) => {
+        setWavesurfer(ws)
+        setIsPlaying(false)
+    }
 
     const changeType = (index) => {
         setIndexTypeError(index)
@@ -36,42 +50,42 @@ const CreateContext = (props) => {
 
         let words = cloneDeep(recordsWords)
 
-        words.forEach((word, index) => {
+        words?.forEach((word, index) => {
             let nWord = { ...word }
-            if (nWord.t_status != "CORRECT") {
+            if (nWord.status != "CORRECT") {
                 nWord.bold = true
-                if (nWord.error_type && nWord.error_type[keysErrors.selfCorrection]) {
-                    nWord.warningBold = true
+                if (nWord.errors) {
+                    const errors = keyBy(word.errors, 'type')
+
+                    if (errors[keysErrors.selfCorrection]) {
+                        nWord.warningBold = true
+                    }
+                    if (errors[keysErrors.selfCorrection] && errorType === keysErrors.selfCorrection) {
+                        nWord.typeBold = true
+                        nWord.errorTypeBold = true
+                    }
+                    if (errors[keysErrors.transposition] && errorType === keysErrors.transposition) {
+                        nWord.typeBold = true
+                        nWord.errorTypeBold = true
+                    }
+                    if (errors[keysErrors.hesitation] && errorType === keysErrors.hesitation) {
+                        nWord.typeBold = true
+                        nWord.errorTypeBold = true
+                    }
+                    if (errors[keysErrors.rootInflection] && type === keysTypes.special) {
+                        nWord.typeBold = true;
+                    }
+                    if (errors[keysErrors.rootInflection] && errorType === keysErrors.rootInflection) {
+                        nWord.errorTypeBold = true
+                        nWord.typeBold = true;
+                    }
                 }
-                if (nWord.error_type && nWord.error_type[keysErrors.selfCorrection] && errorType === keysErrors.selfCorrection) {
+                if (nWord.status === keysErrors.insertion === errorType) {
                     nWord.typeBold = true
                     nWord.errorTypeBold = true
                 }
-                if (nWord.error_type && nWord.error_type[keysErrors.transposition] && errorType === keysErrors.transposition) {
-                    nWord.typeBold = true
-                    nWord.errorTypeBold = true
-                }
-                if (nWord.error_type && nWord.error_type[keysErrors.hesitation] && errorType === keysErrors.hesitation) {
-                    nWord.typeBold = true
-                    nWord.errorTypeBold = true
-                }
-                if (nWord.t_status === keysErrors.insertion === errorType) {
-                    nWord.typeBold = true
-                    nWord.errorTypeBold = true
-                }
-                if (nWord.error_type && nWord.error_type[keysErrors.rootInflection] && type === keysTypes.special) {
-                    nWord.typeBold = true;
-                }
-                if (nWord.error_type && nWord.error_type[keysErrors.rootInflection] && errorType === keysErrors.rootInflection) {
-                    nWord.errorTypeBold = true
-                    nWord.typeBold = true;
-                }
-                else nWord.phoneme_breakdown.forEach((phoneme) => {
-                    if (phoneme.phoneme_duo)
-                        phoneme.phoneme_duo.forEach((phoneme_duo) =>
-                            nWord = addFlagsToPhoneme(phoneme_duo, type, nWord)
-                        )
-                    else nWord = addFlagsToPhoneme(phoneme, type, nWord)
+                else nWord.phonemes.forEach((phoneme) => {
+                    nWord = addFlagsToPhoneme(phoneme, type, nWord)
                 })
             }
             words[index] = nWord
@@ -83,28 +97,33 @@ const CreateContext = (props) => {
     const getByType = () => {
         const type = types[indexType].type
 
-        const recordsWords = cloneDeep(record.results?.text_score)
-        switch (type) {
-            case keysTypes.all:
-                recordsWords.forEach((word) => {
-                    if (word.t_status != "CORRECT") {
-                        word.bold = true
-                        if (word.error_type && word.error_type?.[keysErrors.selfCorrection]) {
-                            word.warningBold = true
+        if (words) {
+            const recordsWords = cloneDeep(words.words)
+            switch (type) {
+                case keysTypes.all:
+                    recordsWords.forEach((word) => {
+                        if (word.status != "CORRECT") {
+                            word.bold = true
+                            if (word.errors) {
+                                const errors = keyBy(word.errors, 'type')
+                                if (errors?.[keysErrors.selfCorrection]) {
+                                    word.warningBold = true
+                                }
+                            }
                         }
-                    }
-                })
-                break
-            case keysTypes.phoneme:
-                return filter(recordsWords, keysTypes.phoneme)
-            case keysTypes.vowel:
-                return filter(recordsWords, keysTypes.vowel)
-            case keysTypes.word:
-                return filter(recordsWords, keysTypes.word)
-            case keysTypes.special:
-                return filter(recordsWords, keysTypes.special)
+                    })
+                    break
+                case keysTypes.phoneme:
+                    return filter(recordsWords, keysTypes.phoneme)
+                case keysTypes.vowel:
+                    return filter(recordsWords, keysTypes.vowel)
+                case keysTypes.word:
+                    return filter(recordsWords, keysTypes.word)
+                case keysTypes.special:
+                    return filter(recordsWords, keysTypes.special)
+            }
+            return recordsWords
         }
-        return recordsWords
     }
 
     const commonState = {
@@ -119,7 +138,11 @@ const CreateContext = (props) => {
         indexMenuItem,
         setIndexMenuItem,
         localRecord,
-        setLocalRecord
+        setLocalRecord,
+        onReadyPlay,
+        onPlayPause,
+        isPlaying,
+        setIsPlaying
     }
 
     return (

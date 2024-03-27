@@ -22,7 +22,6 @@ const Header = (props) => {
                     variant={indexType === index ? "contained" : "outlined"}
                     onClick={() => changeType(type, index)}
                     selected={indexType === index}
-                    key={type.id}
                     disabled={type.disabled}>
                     {type.label}
                 </ButtonType>

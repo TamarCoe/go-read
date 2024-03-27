@@ -5,7 +5,9 @@ const keys = {
     selfCorrection: 'SELF-CORRECTION',
     transposition: 'TRANSPOSITION',
     hesitation: 'HESITATION',
-    rootInflection: "ROOT_INFLECTION"
+    rootInflection: "ROOT_INFLECTION",
+    repitition: 'REPITITION',
+    stop:'STOP'
 }
 
 const errorTypes = [

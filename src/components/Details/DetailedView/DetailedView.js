@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Context } from 'components/Main/Context'
-import { WrapDetails, WrapDetail } from './Style'
+import { WrapDetails } from './Style'
 import { errorTypes } from 'mock'
 import { Card } from 'styles/GlobalStyle'
 
@@ -14,8 +14,8 @@ const DetailedView = () => {
 
     return (
         <WrapDetails>
-            {getByType().map((item, index) => {
-                const { bold, reference_word, transcription, typeBold, errorTypeBold, warningBold } = item
+            {getByType()?.map((item, index) => {
+                const { bold, word_def_text, transcription, typeBold, errorTypeBold, warningBold } = item
                 return (
                     <div key={index} className='detailView'>
                         <Card
@@ -28,12 +28,12 @@ const DetailedView = () => {
                             bg={errorTypeBold && errorType?.bg}
                             customColor={errorTypeBold && errorType?.color}
                         >
-                            {reference_word || !bold && transcription}
+                            {word_def_text || !bold && transcription}
 
                             {bold &&
                                 <span id="bold">
                                     <span id="line">
-                                        {reference_word && "|"}
+                                        {word_def_text && "| "}
                                     </span>
                                     {transcription}
                                 </span>

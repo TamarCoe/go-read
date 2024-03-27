@@ -1,0 +1,123 @@
+{
+  "id": 1,
+  "name": "קול קורא 80 מילים",
+  "text": "אם את בן פיל...",
+  "lexile_level": "100",
+  "type": "PARAGRAPH",
+  "version": 1,
+  "word_defs": [
+    {
+      "id": 1,
+      "text": "אִם",
+      "index": 1,
+      "phoneme_defs": [
+        {
+          "id": 1,
+          "phoneme": "א",
+          "type": "LETTER",
+          "index": 1,
+          "vowel_code": 5,
+          "letter_add_on": null
+        },
+        {
+          "id": 2,
+          "phoneme": "ם",
+          "type": "LETTER",
+          "index": 3,
+          "vowel_code": 12,
+          "letter_add_on": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "עַל",
+      "index": 2,
+      "phoneme_defs": [
+        {
+          "id": 5,
+          "phoneme": "ע",
+          "type": "LETTER",
+          "index": 1,
+          "vowel_code": null,
+          "letter_add_on": null
+        },
+        {
+          "id": 6,
+          "phoneme": "ַ",
+          "type": "VOWEL",
+          "index": 2,
+          "vowel_code": 2,
+          "letter_add_on": null
+        },
+        {
+          "id": 7,
+          "phoneme": "ל",
+          "type": "LETTER",
+          "index": 3,
+          "vowel_code": null,
+          "letter_add_on": null
+        },
+        {
+          "id": 8,
+          "type": "VOWEL",
+          "index": 2,
+          "vowel_code": 12
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "פִּיל",
+      "index": 3,
+      "phoneme_defs": [
+        {
+          "id": 9,
+          "phoneme": "פ",
+          "type": "LETTER",
+          "index": 1,
+          "vowel_code": null,
+          "letter_add_on": 3
+        },
+        {
+          "id": 10,
+          "phoneme": "ִ",
+          "type": "VOWEL",
+          "index": 2,
+          "vowel_code": 3,
+          "letter_add_on": null
+        },
+        {
+          "id": 11,
+          "phoneme": "י",
+          "type": "LETTER",
+          "index": 3,
+          "vowel_code": null,
+          "letter_add_on": null
+        },
+        {
+          "id": 12,
+          "phoneme": "ִ",
+          "type": "VOWEL",
+          "index": 2,
+          "vowel_code": 12
+        },
+        {
+          "id": 13,
+          "phoneme": "ל",
+          "type": "LETTER",
+          "index": 4,
+          "vowel_code": null,
+          "letter_add_on": null
+        },
+        {
+          "id": 14,
+          "phoneme": "ִ",
+          "type": "VOWEL",
+          "index": 2,
+          "vowel_code": 12
+        }
+      ]
+    }
+  ]
+}

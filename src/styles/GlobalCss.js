@@ -23,12 +23,12 @@ const Scroll = css`
 
 &::-webkit-scrollbar-thumb {
   border-radius: 30px;
-  background: ${secondary};
+  background: #C7C4C4;
 
 }
 
 & ::-webkit-scrollbar-thumb:hover {
-  background: ${secondary};
+  background: #C7C4C4;
 }
 
 
@@ -47,7 +47,7 @@ flex-direction: column;
 
 const Section = css`
 background: #FFFFFF;
-border-radius: 16px;
+border-radius: 12px;
 padding:20px;
 height:calc(100% - 40px)
 `

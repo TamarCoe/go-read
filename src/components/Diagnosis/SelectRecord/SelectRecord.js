@@ -7,9 +7,11 @@ import UploadFileIcon from '@mui/icons-material/UploadFile';
 import { Context } from 'components/Main/Context'
 import { FormControl, InputLabel, Select, MenuItem, Button } from '@mui/material'
 import { StartButton, WrapSelectRecord, UploadButton } from './Style'
+import { SelectRecordCrud } from './hooks'
 
 const SelectRecord = () => {
     const { record, setRecord, localRecord, setLocalRecord } = useContext(Context)
+    const { getData } = SelectRecordCrud()
 
     const handleChange = e => {
         const fileReader = new FileReader();
@@ -22,6 +24,11 @@ const SelectRecord = () => {
     const changeFlag = (flag) => {
         setLocalRecord(flag)
         setRecord(0)
+    }
+
+    const selectRecord = (record) => {
+        setRecord(record)
+        getData()
     }
 
     return (
@@ -43,7 +50,7 @@ const SelectRecord = () => {
                         }}
                         value={record}
                         onChange={({ target }) => {
-                            setRecord(target.value)
+                            selectRecord(target.value)
                         }}
                         placeholder="בחירת הקלטה"
                         inputProps={{ 'aria-label': 'Without label' }}

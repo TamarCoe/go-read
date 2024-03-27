@@ -1,0 +1,61 @@
+{
+    "user_name": "מירבל",
+    "reading_assessment_def": 1,
+    "audio_file": "/Audio%20Files/8_%D7%A9%D7%99%D7%A0%D7%95%D7%99_%D7%A7%D7%95%D7%9C_fKxz3wi.mp3",
+    "duration": "60.00",
+    "phonemes_decoded_count": 0,
+    "time_intervals_count": 0,
+    "num_differences_count": 0,
+    "substitution_count": 0,
+    "insertion_count": 0,
+    "correct_count": 0,
+    "omission_count": 0,
+    "reading_assessment_name": "קול קורא 80 מילים",
+    "reading_assessment_text": null,
+    "words": [
+        {
+            "transcription": "בכזור",
+            "status": "INCORRECT",
+            "start_time": null,
+            "end_time": null,
+            "word_def_text": "עַל",
+            "word_def_index": 2,
+            "phonemes": [
+                {
+                    "phoneme": "א",
+                    "type": "LETTER",
+                    "index": 2,
+                    "vowel_code": 15,
+                    "letter_add_on": 1,
+                    "letter_status": "CORRECT",
+                    "vowel_status": "CORRECT",
+                    "phoneme_def_letter": "א",
+                    "phoneme_def_type": "LETTER",
+                    "phoneme_def_index": null,
+                    "phoneme_def_vowel_code": "חיריק",
+                    "phoneme_def_letter_add_on": null
+                },
+                {
+                    "phoneme": "ם",
+                    "type": "LETTER",
+                    "index": 3,
+                    "vowel_code": null,
+                    "letter_add_on": null,
+                    "letter_status": "CORRECT",
+                    "vowel_status": "INCORRECT",
+                    "phoneme_def_letter": "ם",
+                    "phoneme_def_type": "LETTER",
+                    "phoneme_def_index": null,
+                    "phoneme_def_vowel_code": "ללא ניקוד",
+                    "phoneme_def_letter_add_on": "עיצור"
+                }
+            ],
+            "errors": [
+                {
+                    "type": "SELF_CORRECTION",
+                    "status": "INCORRECT"
+                }
+            ]
+        }
+    ]
+}

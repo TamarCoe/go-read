@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { StyledIconButton, WrapSelect, WrapFooterButtons, WrapSection, StyledAddCircleOutlineIcon, WrapQuery, WrapLeft, WrapRight, Content } from './Style'
 import Select from 'components/Select'
-import query from 'mock/query.json'
+import query from 'mock/query'
 import { Button } from '@mui/material'
 
 const Query = () => {

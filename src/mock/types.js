@@ -8,6 +8,12 @@ const keys = {
     special: "special"
 }
 
+const keysTypes = {
+    letter: "LETTER",
+    vowel: "VOWEL",
+    word: "WORD",
+}
+
 const types = [
     {
         id: 0,
@@ -49,4 +55,4 @@ const types = [
 
 export default types
 
-export { keys as keysTypes }
+export { keys as keysTypes, keysTypes as keys }
