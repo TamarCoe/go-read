@@ -14,7 +14,7 @@ class Word {
         let flagCheckStatus = false
 
         phonemes.map((nPhoneme) => {
-            const { letter, vowel_code, letter_add_on, vowel_status = 'CORRECT', letter_stauts = 'CORRECT' } = nPhoneme
+            const { letter, vowel_code, letter_add_on, vowel_status = 'CORRECT', letter_status = 'CORRECT' } = nPhoneme
 
             nTranscription += letter
             if (vowel_code) {
@@ -27,7 +27,7 @@ class Word {
                 if (letterAddOnsStr)
                     nTranscription += String.fromCodePoint(parseInt(letterAddOnsStr, 16))
             }
-            if (vowel_status != 'CORRECT' || letter_stauts != 'CORRECT')
+            if (vowel_status != 'CORRECT' || letter_status != 'CORRECT')
                 flagCheckStatus = true
         })
         this.transcription = sequence(nTranscription);

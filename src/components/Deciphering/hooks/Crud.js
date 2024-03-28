@@ -11,22 +11,22 @@ const Crud = () => {
 
     const handlePlus = (index) => {
         const nPhonemesSave = addItem(phonemes, index, {
-            id: uuid(),
+            id: 123,
             type: keys.letter,
             vowel_code: null,
             letter_add_on: null,
-            phoneme: null,
+            letter: null,
             vowel_status: keysSourceChanges.insertion,
             letter_status: keysSourceChanges.insertion,
         })
-        const nStaicPhonemes = addItem(staticWord.phoneme_defs, index, { id: uuid() })
+        const nStaicPhonemes = addItem(staticWord.phoneme_defs, index, { id: 123 })
         dispatch(actions.setPhonemes(nPhonemesSave))
         dispatch(actions.setStaticWord({ ...staticWord, phoneme_defs: nStaicPhonemes }))
     }
 
     const savePhoneme = (value, index) => {
         let newPhonemes = [...phonemes]
-        newPhonemes[index].phoneme = value
+        newPhonemes[index]={...newPhonemes[index],letter:value}
         dispatch(actions.setPhonemes(newPhonemes))
     }
 

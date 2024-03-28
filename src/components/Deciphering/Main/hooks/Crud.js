@@ -27,33 +27,58 @@ const Crud = () => {
 
     const handleClickVowelRow = (phoneme, vowel, phonemeIndex) => {
         let nPhonemesSave = [...phonemes]
-        if (vowel != phoneme.vowel_code) {
-            nPhonemesSave[phonemeIndex] = {
-                ...nPhonemesSave[phonemeIndex],
-                vowel_code: vowel,
-                vowelEdited: true,
-                phoneme_def: staticWord.phoneme_defs[phonemeIndex].id,
-                phoneme_def_vowel_code: phoneme.phoneme_def_vowel_code || phoneme.vowel_code,
-            }
-            if (nPhonemesSave[phonemeIndex].letter_status != keysSourceChanges.insertion) {
-                nPhonemesSave[phonemeIndex].vowel_status = keysSourceChanges.substitution
-            }
+        nPhonemesSave[phonemeIndex] = {
+            ...nPhonemesSave[phonemeIndex],
+            vowel_code: vowel,
+            vowelEdited: true,
+            phoneme_def: staticWord.phoneme_defs[phonemeIndex].id,
+            phoneme_def_vowel_code: phoneme.phoneme_def_vowel_code || phoneme.vowel_code,
         }
+        if (nPhonemesSave[phonemeIndex].letter_status != keysSourceChanges.insertion)
+            if (staticWord.phoneme_defs[phonemeIndex].vowel_code?.toString() != vowel?.toString())
+                nPhonemesSave[phonemeIndex].vowel_status = keysSourceChanges.substitution
+            else
+                nPhonemesSave[phonemeIndex] = { ...nPhonemesSave[phonemeIndex], vowel_status: 'CORRECT' }
+
+
         dispatch(actions.setPhonemes(nPhonemesSave))
     }
 
-    const handleClickOtherRow = (phoneme, vowel, phonemeIndex) => {
+    const handleClickOtherRow = (phoneme, letter_add_on, phonemeIndex) => {
         let nPhonemesSave = [...phonemes]
-        if (vowel != phoneme.letter_add_on) {
+        if (letter_add_on.toString() === phoneme.letter_add_on?.toString()) {
+            //click twice - cancel the choise
+
+            if (phoneme.letter_status === keysSourceChanges.insertion)
+                nPhonemesSave[phonemeIndex] = {
+                    ...nPhonemesSave[phonemeIndex],
+                    phoneme_def: phoneme.id,
+                    letter_add_on: null,
+                    phoneme_def_letter_add_on: null,
+                }
+            else nPhonemesSave[phonemeIndex] = {
+                ...nPhonemesSave[phonemeIndex],
+                phoneme_def: staticWord.phoneme_defs[phonemeIndex].id,
+                letter_add_on: staticWord.phoneme_defs[phonemeIndex].letter_add_on,
+                phoneme_def_letter_add_on: phoneme.phoneme_def_letter_add_on || phoneme.letter_add_on,
+            }
+
+            if (nPhonemesSave[phonemeIndex].letter_status != keysSourceChanges.insertion)
+                nPhonemesSave[phonemeIndex].letter_status = 'CORRECT'
+        }
+
+        else {
             nPhonemesSave[phonemeIndex] = {
                 ...nPhonemesSave[phonemeIndex],
                 letterEdited: true,
                 phoneme_def: staticWord.phoneme_defs[phonemeIndex].id,
-                letter_add_on: vowel,
+                letter_add_on: letter_add_on,
                 phoneme_def_letter_add_on: phoneme.phoneme_def_letter_add_on || phoneme.letter_add_on,
             }
             if (nPhonemesSave[phonemeIndex].letter_status != keysSourceChanges.insertion)
-                nPhonemesSave[phonemeIndex].letter_status = keysSourceChanges.substitution
+                if (staticWord.phoneme_defs[phonemeIndex].letter_add_on?.toString() != letter_add_on?.toString())
+                    nPhonemesSave[phonemeIndex].letter_status = keysSourceChanges.substitution
+                else nPhonemesSave[phonemeIndex].letter_status = 'CORRECT'
         }
 
         dispatch(actions.setPhonemes(nPhonemesSave))
@@ -74,8 +99,9 @@ const Crud = () => {
 
         let nPhonemesSave = [...phonemes]
         if (nPhonemesSave[index][vowel.type] === keysSourceChanges.na)
-            nPhonemesSave[index][vowel.type] = null
-        else nPhonemesSave[index][vowel.type] = keysSourceChanges.na
+            nPhonemesSave[index] = { ...nPhonemesSave[index], [vowel.type]: null }
+        else
+            nPhonemesSave[index] = { ...nPhonemesSave[index], [vowel.type]: keysSourceChanges.na }
         dispatch(actions.setPhonemes(nPhonemesSave))
     }
 
