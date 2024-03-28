@@ -29,7 +29,7 @@ const CustomSelect = (props) => {
                     </MenuItem>
                     {
                         items.map((item, index) =>
-                            <MenuItem key={index} value={item}>{item.label}</MenuItem>
+                            <MenuItem key={index} value={item}>{item?.label}</MenuItem>
                         )
                     }
                 </MuiSelect >

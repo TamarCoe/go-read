@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
-import { Section } from "styles/GlobalCss";
+import { Font, Section } from "styles/GlobalCss";
 import { IconButton } from '@mui/material'
 
 const Letter = css`
 color: var(--Black, #000);
 text-align: right;
-font-family: Poppins;
+${Font};
 font-size: 28px;
 font-style: normal;
 font-weight: 600;
@@ -77,7 +77,7 @@ ${Word};
 column-gap: 10px;
 color: #7D7D7D;
 text-align: right;
-font-family: Poppins;
+${Font};
 font-size: 14px;
 font-style: normal;
 font-weight: 100;

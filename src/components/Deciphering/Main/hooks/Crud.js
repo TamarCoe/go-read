@@ -4,6 +4,7 @@ import { getLetterAddOn, getStatisWords, getVowelCode } from 'services/static'
 import { keysSourceChanges } from 'mock/sourceChanges'
 import { changeItem } from 'utils/array'
 import { useDispatch, useSelector } from 'react-redux'
+import { cloneDeep } from 'lodash'
 
 const Crud = () => {
     const dispatch = useDispatch()
@@ -79,9 +80,11 @@ const Crud = () => {
     }
 
     const addOtherParams = (value, index) => {
-        let errors = word.errors || [{}, {}]
+        let errors = cloneDeep(word.errors || [{}, {}])
 
-        errors[index] = new Error(value.type)
+        if (value.type)
+            errors[index] = new Error(value.type)
+        else errors[index] = null
         dispatch(actions.setWord({ ...word, errors: errors }))
     }
 

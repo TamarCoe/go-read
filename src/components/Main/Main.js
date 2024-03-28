@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react'
-import ProfileDetails from 'components/Details/ProfileDetails'
 import Router from 'components/Router'
-import { WrapScreen } from 'styles/GlobalStyle'
 import Header from 'components/Header'
-import { WrapContent } from './Style'
 import Record from 'components/Record'
-import { sequence } from 'hebrew-transliteration'
+import axios from 'axios'
 import { Crud } from './hooks'
 import { Buffer } from "buffer"
-import axios from 'axios'
+import { WrapContent } from './Style'
+import { WrapScreen } from 'styles/GlobalStyle'
+
 
 const Main = () => {
     const { init } = Crud()

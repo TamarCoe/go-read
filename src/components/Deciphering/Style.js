@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import styled from "styled-components";
 import { Hover, Scroll } from "styles/GlobalCss";
 import { black } from "styles/theme";
+import { Font } from "styles/GlobalCss";
 
 
 const Vowel = styled(Button)`
@@ -12,11 +13,11 @@ const Vowel = styled(Button)`
     display: block !important;
     color: #7D7D7D !important;
     text-align: right !important;
-    font-family: Poppins !important;
     font-size: 12px !important;
     font-style: normal !important;
     font-weight: 500 !important;
     line-height: normal !important;
+    ${Font};
 
     color:${props => props.defaultVowel && black} !important;;
     border: ${props => props.defaultVowel && '1px solid #37940C'} !important;;
@@ -44,6 +45,7 @@ overflow-y:auto;
 height: 100%;
 ${Scroll};
 border-collapse: separate;
+margin-bottom: 30px;
 display: flex;
 
 .col-plus{
@@ -127,7 +129,7 @@ input{
 .title{
     color: #121212;
     text-align: right;
-    font-family: Poppins;
+    ${Font};
     font-size: 12px;
     font-style: normal;
     font-weight: 600;

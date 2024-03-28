@@ -5,9 +5,9 @@ import { sequence } from 'hebrew-transliteration'
 class Word {
 
     constructor(staticWord, phonemes, vowelCodes, letterAddOns) {
-        const { status, id, text, index, errors } = staticWord
+        const { word_def,status, id, text, index, errors } = staticWord
 
-        this.word_def = id;
+        this.word_def = word_def;
 
         let nTranscription = ''
         let flagCheckStatus = false
@@ -41,9 +41,9 @@ class Word {
 
 const getErros = (errors) => {
     let nErrors = []
-    if (errors[0])
+    if (errors?.[0])
         nErrors.push(errors[0])
-    if (errors[1])
+    if (errors?.[1])
         nErrors.push(errors[1])
     return nErrors
 

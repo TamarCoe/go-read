@@ -31,6 +31,7 @@ const Crud = () => {
         if (words) {
             const wordsSort = sortBy(nWords, "word_def_index")
             dispatch(actions.setWords({ ...words, words: wordsSort }))
+            dispatch(actions.setWord(wordsSort?.[wordIndex]))
             if (wordsSort[wordIndex]?.phonemes)
                 dispatch(actions.setPhonemes(wordsSort[wordIndex].phonemes))
             else

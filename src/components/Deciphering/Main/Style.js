@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Scroll } from "styles/GlobalCss";
 import { WrapContent } from "styles/GlobalStyle";
 
 
 const Content = styled(WrapContent)`
-height:calc(100% - 190px);
+height:calc(100% - 160px);
 display: flex;
 flex-direction: column;
 row-gap: 10px;
@@ -13,6 +14,9 @@ row-gap: 10px;
     display:flex;
     justify-content: space-between;
     column-gap: 15px;
+    overflow:auto;
+
+    ${Scroll};
 }
 `
 

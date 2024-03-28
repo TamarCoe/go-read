@@ -8,6 +8,10 @@ const Hover = css`
 }
 `
 
+const Font = css`
+font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+`
+
 const Scroll = css`
 
 &::-webkit-scrollbar {
@@ -65,4 +69,4 @@ background:${props => props.selected && '#F3F3F3'};
 opacity:${props => props.disabled && '0.5'};
 `
 
-export { Scroll, CustomButton, Hover, WrapScreen, Section }
+export { Font, Scroll, CustomButton, Hover, WrapScreen, Section }

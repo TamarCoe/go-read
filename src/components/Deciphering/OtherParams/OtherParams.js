@@ -15,13 +15,13 @@ const OtherParams = () => {
     return (
         <WrapOtherParams>
             <Select
-                value={word.errors[0]}
+                value={sourceChangesList?.[word?.errors?.[0]?.type]}
                 handleChange={(val) => addOtherParams(val, 0)}
                 label="קריטריונים נוספים"
                 items={sourceChangesList}
             />
             <Select
-                value={word.errors[1]}
+                value={meetsCriterion?.[word?.errors?.[0]?.type]}
                 handleChange={(val) => addOtherParams(val, 1)}
                 label="סוגי טעויות נוספים"
                 items={map(meetsCriterion)}

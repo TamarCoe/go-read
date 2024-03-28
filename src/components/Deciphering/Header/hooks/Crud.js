@@ -13,6 +13,7 @@ const Crud = () => {
     const changeWordIndex = (value) => {
         dispatch(actions.setWordIndex(value))
         dispatch(actions.setStaticWord(staticWords.word_defs[value]))
+        dispatch(actions.setWord(words.words[value]))
         if (words?.words[value]?.phonemes)
             dispatch(actions.setPhonemes(words.words[value].phonemes))
         else
@@ -28,16 +29,20 @@ const Crud = () => {
     }
 
     const saveData = async () => {
-        let saveWordsData = new WordRM({ ...staticWord, ...word }, phonemes, vowelCode, letterAddOn)
+        let nStaticWord = { ...staticWord }
+        nStaticWord.word_def = nStaticWord.id
+        delete nStaticWord.id
+        let saveWordsData = new WordRM({ ...nStaticWord, ...word }, phonemes, vowelCode, letterAddOn)
         const res = await saveWord(1, saveWordsData)
         if (res) {
-            fillData()
-            if (wordIndex != staticWords.length - 1)
+            await fillData()
+            if (wordIndex != staticWords.length - 1) {
                 nextWord()
+                return
+            }
         }
 
-
-        return
+        else return
     }
 
     return {

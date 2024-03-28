@@ -9,10 +9,14 @@ const keys = {
     rootInflection: "ROOT_INFLECTION",
     repitition: 'REPITITION',
     na: "N/A",
-    stop: 'STOP'
+    stop: 'STOP',
+    none: 'NONE'
 }
 
 const sourceChanges = {
+    [keys.none]: {
+        "label": "אין קרטריון",
+    },
     [keys.substitution]: {
         "label": "החלפה",
         type: keys.substitution,
