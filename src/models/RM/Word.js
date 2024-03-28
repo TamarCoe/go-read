@@ -5,9 +5,10 @@ import { sequence } from 'hebrew-transliteration'
 class Word {
 
     constructor(staticWord, phonemes, vowelCodes, letterAddOns) {
-        const { word_def,status, id, text, index, errors } = staticWord
+        const { word_def, status, id, text, index, errors } = staticWord
 
         this.word_def = word_def;
+        this.id = id;
 
         let nTranscription = ''
         let flagCheckStatus = false
@@ -17,10 +18,14 @@ class Word {
 
             nTranscription += letter
             if (vowel_code) {
-                nTranscription += vowelCodes[vowel_code].ascii_code
+                const vowelCodesSrt = vowelCodes[vowel_code].ascii_code
+                if (vowelCodesSrt)
+                    nTranscription += String.fromCodePoint(parseInt(vowelCodesSrt, 16))
             }
             if (letter_add_on) {
-                nTranscription += letterAddOns[letter_add_on].ascii_code
+                const letterAddOnsStr = letterAddOns[letter_add_on].ascii_code
+                if (letterAddOnsStr)
+                    nTranscription += String.fromCodePoint(parseInt(letterAddOnsStr, 16))
             }
             if (vowel_status != 'CORRECT' || letter_stauts != 'CORRECT')
                 flagCheckStatus = true

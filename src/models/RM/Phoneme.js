@@ -5,6 +5,7 @@ class Phoneme {
     constructor(nPhoneme) {
         const { phoneme_def, vowel_status = 'CORRECT', letter_status = 'CORRECT', id, letter, type, index = 1, vowel_code, letter_add_on } = nPhoneme
 
+        this.id = id
         this.type = 'LETTER';
         this.index = 1;//I dont know index
 

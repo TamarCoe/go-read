@@ -8,7 +8,6 @@ import { Buffer } from "buffer"
 import { WrapContent } from './Style'
 import { WrapScreen } from 'styles/GlobalStyle'
 
-
 const Main = () => {
     const { init } = Crud()
 
@@ -22,6 +21,7 @@ const Main = () => {
             return Promise.reject(error);
         });
     }
+
 
     useEffect(() => {
         const initData = async () => {

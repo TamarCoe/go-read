@@ -39,10 +39,10 @@ const DetailedView = () => {
 
                                     {bold &&
                                         <span id="bold">
-                                            {/* <span id="line">
+                                            <span id="line">
                                                 {word_def_text && "| "}
                                             </span>
-                                            {transcription} */}
+                                            {transcription}
                                         </span>
                                     }
                                 </>
